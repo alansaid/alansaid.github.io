@@ -2,7 +2,7 @@
 title: "Teaching"
 sitemap: true
 layout: single
-permalink: /teaching
+permalink: /teaching.html
 excerpt: "Recent courses"
 author_profile: true
 ---

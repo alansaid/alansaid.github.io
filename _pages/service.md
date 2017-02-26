@@ -2,7 +2,7 @@
 title: "Service"
 sitemap: true
 layout: single
-permalink: /service
+permalink: /service.html
 excerpt: "Service to the scientific community"
 author_profile: true
 ---

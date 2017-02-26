@@ -4,16 +4,16 @@ main:
     url: /
 
   - title: "Research"
-    url: /research/
+    url: /research.html
 
   - title: "Publications"
-    url: /publications/
+    url: /publications.html
 
   - title: "Service"
-    url: /service/
+    url: /service.html
 
   - title: "Teaching"
-    url: /teaching/
+    url: /teaching.html
 
   - title: "News"
-    url: "/news/"
+    url: /news.html
