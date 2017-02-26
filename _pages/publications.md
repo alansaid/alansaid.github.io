@@ -2,7 +2,7 @@
 title: "Publications"
 sitemap: true
 layout: single
-permalink: /publications.html
+permalink: /publications
 excerpt: "Papers, papers, papers, papers."
 author_profile: true
 ---

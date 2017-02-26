@@ -2,7 +2,8 @@
 title: "Research"
 layout: single
 sitemap: true
-permalink: /research.html
+excerpt: 
+permalink: /research
 author_profile: true
 ---
 
