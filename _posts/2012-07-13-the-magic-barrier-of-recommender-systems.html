@@ -1,0 +1,82 @@
+---
+
+status: publish
+published: true
+title: The Magic Barrier of Recommender Systems
+excerpt: In this post I'll describe our two most recent papers related to the magic barrier
+date: '2012-07-13 17:12:36 +0200'
+date_gmt: '2012-07-13 15:12:36 +0200'
+---
+<p>In this post I'll describe our two most recent papers related to the <em>magic barrier</em> of recommender systems. The magic barrier is a concept introduced by <a title="Herlocker et al." href="http://dx.doi.org/10.1145/963770.963772" target="_blank">Herlocker et al.</a>, the term refers to the point at which the accuracy of an algorithm cannot be improved, e.g. where higher precision accuracy, or lower prediction error, does not actually mean that the algorithm is improving.<a id="more"></a><a id="more-1003"></a></p>
+<p>Before you start reading, you should know that this post has it's fair share of equations and math, but the core concept of it should be clear even when not looking into the mathematical details (at least the first half of it).</p>
+<p>I'll start by describing some of the background to why we got into the magic barrier business to start with, if you're only interested in the actual formalization of the magic barrier then go ahead an skip to <a href="#MagicBarrier">here</a>.</p>
+<h2><a name="background"></a>Background</h2><br />
+The first time I attended the ACM Recommender Systems Conference (<a title="RecSys 2009" href="http://recsys.acm.org/2009" target="_blank">RecSys2009</a>), <a title="Xamat" href="http://xavier.amatriain.net/" target="_blank">Xavier Amatriain</a> (<a title="@xamat" href="http://twitter.com/xamat" target="_blank">@xamat</a>) presented a paper titled "<a title="Rate it again" href="http://dx.doi.org/10.1145/1639714.1639744" target="_blank">Rate in again: Increasing recommendation accuracy by user re-rating</a>" (Xavier actually wrote a <a title="Rate it again" href="http://technocalifornia.blogspot.de/2009/08/rate-it-again.html" target="_blank">blog post</a> about the paper, which I recommend you to read). For me, this paper was one of the most interesting I saw at the conference. It wasn't entirely related to what I thought would be my research topic (still being fairly new in the Ph.D game then). Roughly two years later I did however find myself doing something related to the topics covered in the paper.</p>
+<p>At the time, I was working in a project with <a title="moviepilot" href="http://moviepilot.de" target="_blank">moviepilot</a>, and one of the things we wanted to figure out was whether we could measure the quality of their recommender engine other than by means of precision, recall, rmse, and the likes. Together with a few colleagues (<a title="Sascha" href="http://www.dai-labor.de/en/competence_centers/irml/people/sascha.narr" target="_blank">Sascha</a> &amp; <a title="Till Plumbaum" href="http://www.dai-labor.de/en/competence_centers/irml/people/till.plumbaum" target="_blank">Till</a>) and moviepilot we thought up the idea to ask moviepilot's users about their <em>opinions</em> on movies they had rated in the past. We chose the term opinions (German: Meinung) instead of re-rating to make sure we weren't subconsciously asking the participants to change their ratings. To collect these opinions we created a Web interface, and then the good people at moviepilot <a title="Wie gut kennst du dich?" href="http://www.moviepilot.de/news/wie-gut-kennst-du-dich-110548" target="_blank">posted the link to the thing on their website</a>.</p>
+<h2>The Study</h2><br />
+The concept of the study was pretty straight-forward: get a bunch of users - ask them to give opinions on movies they've seen in the past - analyze the data - profit.</p>
+<p>We needed to make sure that the data we collected would not be biased in any way. This meant that the experience of giving opinions needed to be similar to when a user rates movie. To make sure of this, we practically made a 1:1 copy of moviepilot's own rating interface, but instead of populating it with movie recommendations, we filled it with a random selection of the movies the users had rated.</p>
+<p>The two images below show moviepilot's rating interface (first image) and our rating interface (second image).</p>
+<p>[caption id="attachment_1005" align="aligncenter" width="300"]<a href="http://alans.se/wp/wp-content/uploads/rating.jpg"><img class=" wp-image-1005" title="moviepilot's rating interface" src="http://alans.se/wp/wp-content/uploads/rating.jpg" alt="" width="300" height="227" /></a> moviepilot's rating interface[/caption]</p>
+<p>[caption id="attachment_1006" align="aligncenter" width="310"]<a href="http://alans.se/wp/wp-content/uploads/opinion.jpg"><img class=" wp-image-1006" title="Our opinion collector" src="http://alans.se/wp/wp-content/uploads/opinion.jpg" alt="Our opinion collector" width="310" height="244" /></a> Our opinion collector[/caption]</p>
+<p>We ran the study for a couple of weeks in April and May of 2011, and in the end we had collected 6, 299 new opinions on 2, 329 movies by 306 users. This data is what we then used to estimate the magic barrier of moviepilot.</p>
+<h2><a name="MagicBarrier"></a>The Magic Barrier</h2><br />
+The study lead to two publications, a poster titled&nbsp;<a title="Estimating the Magic Barrier" href="http://www.dai-labor.de/en/publication/721" target="_blank"><em><em>Estimating the</em> Magic Barrier of Recommender Systems: A User Study</em></a> at <a title="SIGIR 2012" href="www.sigir.org/sigir2012/" target="_blank">SIGIR 2012</a> and a full paper at <a title="UMAP2012" href="http://umap2012.polymtl.ca/" target="_blank">UMAP 2012</a> titled <a title="Users and Noise" href="http://www.dai-labor.de/en/publication/713" target="_blank"><em>Users and Noise: The Magic Barrier of Recommender Systems</em></a>. The poster is based on a very early analysis of our data and presents a fairly simplistic attempt at estimating the magic barrier. Both of these papers would have not been possible without the help of <a title="Brijnesh" href="http://www.dai-labor.de/en/competence_centers/irml/people/brijnesh-johannes.jain" target="_blank">Brijnesh</a> who came up with the idea and approach of using ERM (see The Longer One) for magic barrier estimation.</p>
+<h3>The Short and Simple (RMSE-based)</h3><br />
+This simple estimate of the magic barrier is almost embarrassingly trivial. In a traditional rating prediction-based evaluation, the quality of the recommender engine is expressed in <a title="RMSE" href="http://recsyswiki.com/wiki/RMSE" target="_blank">RMSE</a> where the error calculated by comparing the predicted rating&nbsp; to an actual rating which has been withheld from the recommendation algorithm (e.g. it's not in the training set).</p>
+<p>Given the fact that we now have an additional rating set, i.e. the opinions we collected, we can calculate the RMSE of the <em>users themselves</em>, i.e. giving us an estimate of how much or little the users of moviepilot actually now about their own taste.</p>
+<p>[caption id="attachment_1009" align="aligncenter" width="300"]<a href="http://alans.se/wp/wp-content/uploads/rmse.jpg"><img class="size-medium wp-image-1009" title="Simple RMSE" src="http://alans.se/wp/wp-content/uploads/rmse-300x61.jpg" alt="Simple RMSE" width="300" height="61" /></a> Simple RMSE estimation[/caption]</p>
+<p>In the equation above, we simply replace the traditional <em>predicted</em> value with the collected <em>opinion</em> (<em>o</em> above) and compare it to the original/true rating (<em>r</em> above).</p>
+<p>Our assumption is that the error measure we obtain reflects the level of optimization we can perform on an algorithm before the improvement in prediction accuracy will not be perceived by the users.</p>
+<p>If attempting to use a similar magic barrier estimate, one should take the user's rating context into consideration, i.e. perhaps not calculating one magic barrier for the whole set of ratings, rather focusing on creating a set of magic barriers - one for each context.</p>
+<p>The complete approach is described in this paper:</p>
+<pre escaped="true" lang="bibtex">@inproceedings{Said:2012:EMB,<br />
+author = {Said, Alan and Jain, Brijnesh J. and Narr, Sascha and Plumbaum, Till and Albayrak, Sahin and Scheel, Christian},<br />
+title = {Estimating the Magic Barrier of Recommender Systems: A User Study},<br />
+booktitle = {Proceedings of the 35th international ACM SIGIR conference on Research and development in Information Retrieval},<br />
+series = {SIGIR '12},<br />
+year = {2012},<br />
+isbn = {978-1-4503-1472-5},<br />
+location = {Portland, OR, USA},<br />
+numpages = {2},<br />
+publisher = {ACM},<br />
+address = {New York, NY, USA},<br />
+keywords = {recommender systems, evaluation, noise},<br />
+}</pre></p>
+<h3>The Longer One (ERM-based)</h3><br />
+Ok, so this one is not as short, and not as simple as the short and simple one. But it does make more sense..</p>
+<p>The idea behind this magic barrier estimation is based on <a title="ERM" href="http://en.wikipedia.org/wiki/Empirical_risk_minimization" target="_blank">empirical risk minimization</a> (ERM). For those who fell asleep in Statistics 101, Wikipedia says "<em>Empirical risk minimization is a principle in statistical learning theory which defines a family of learning algorithms and is used to give theoretical bounds on the performance of learning algorithms.</em>" (click the link above to see the full article).</p>
+<p>Let's start with some notation and assumptions:</p>
+<p>\(p(u,i)\) - describes the likelihood of user <em>u</em> rating item <em>i</em><br />
+\(p(r|u,i)\) - describes the likelihood of user <em>u</em> rating item <em>i</em> with rating score <em>r</em><br />
+\(\mathcal{F}\) - is a class of rating functions from which we learn the rating function <em>f</em></p>
+<p>We now want to learn a rating function \(f \in \mathcal{F}\) which minimizes the expected risk function \(R(f) = \sum_{(u,i, r)} p(u, i, r)\big(f(u,i) - r\big)^2 \), meaning that whenever the probability \(p(u,i,r)\) is high, we want our rating function \(f(u,i)\) to give good predictions, otherwise the risk becomes high. Consequently, when the probability is low, the prediction error doesn't really matter (well, it does, but not as much) as it will be reduced through the low probability value.</p>
+<p>However, since the distribution \(p(u,i,r)\) is unknown, we cannot compute the optimal rating function \(f_* = \arg\min_{f \in \mathcal{F}} R(f)\). What we can do instead is approximate \(f_*\) by minimizing the <em>empirical</em> risk, i.e.<br />
+\(\widehat{R}(f|\mathcal{X}) = \frac{1}{\mathop{|\mathcal{X}|}} \sum_{r_{ui}\in \mathcal{X}} \big(f(u,i) - r_{ui}\big)^{2} \), where \(\mathcal{X} \subseteq \mathcal{R}\) is the training set (i.e. all ratings given by user <em>u</em> on item <em>i</em>). As a result, minimizing the empirical risk is the same as minimizing RMSE.</p>
+<h4>Modeling User Inconsistencies</h4><br />
+Now, that we've formulated an ERM model for minimizing RMSE, we continue with a model for user inconsistencies (i.e. the reason to why the collected opinions were not identical to the original ratings given by users). The goal of this being to show that the magic barrier is the <b>standard deviation</b> of the inconsistencies.</p>
+<p>Numerous publications have discussed the inherent rating inconsistencies that users/people seem to be afflicted by (the paper mentioned by Amatriain et al. in the beginning of this post being just one of them). In order to formulate our model for the magic barrier, just as in the RMSE-based model, we will <b>regard all inconsistencies as noise</b>. We're not trying to argue that the taste of users doesn't change (it does), what we're trying to show is a general model of the magic barrier. The final model can be applied to <i>context-aware</i> approaches in order to get context-specific magic barriers (that's something we're currently leaving as future work).</p>
+<p>Keeping our user study in mind, we say that the <i>expected rating</i> of user <i>u</i> on item <i>i</i> is defined by the expectation \(\mathbb{E}[R_{ui}] = \mu_{ui}\) where \(R_{ui}\) is a random variable taking a value from the rating scale, e.g. in Movielens or Netflix this would be 1, ..., 5, in moviepilot this is a value between 0 and 10 in steps of 0.5).<br />
+A rating then becomes \(r_{ui} = \mu_{ui} + \varepsilon_{ui}\) where \(\mu_{ui}\) is the expected value of the rating, and the \(\varepsilon_{ui}\) the noise (which arises from the user's inconsistency).</p>
+<h4>Modeling the Magic Barrier</h4><br />
+Having created a model for user inconsistencies, we can now model the the magic barrier. Let's assume that \(f_*\) is the true and unknown rating function - it knows all expected ratings of all users on all items, i.e. \(f_*(u,i)=\mu_{ui}\).<br />
+This optimal rating function minimizes the expected risk function \(R(f)\) above, which we (given the above equations) now can express as \(R(f_*) = \sum_{(u,i)} p(u,i)\mathbb{E}\left[\varepsilon_{ui}^2 \right] = \sum_{(u,i)} p(u,i)\mathbb{V}\left[\varepsilon_{ui} \right]\), where \(\mathbb{V}\left[\varepsilon_{ui} \right]\) is the noise variance.</p>
+<p>So, having all this, we can now express the magic barrier of a recommender system in terms of RMSE as \(B_{\mathcal{U} \times \mathcal{I}} = \sqrt{\sum_{(u,i)} p(u,i)\mathbb{V}\left[\varepsilon_{ui} \right]} \) (if you can't see why, then replace all symbols in the equation with their corresponding equations).</p>
+<p>Finally, we can express the RMSE of the function \(f\) as \(E_{RMSE}(f) = B_{\mathcal{U} \times \mathcal{I}} +E_f > B_{\mathcal{U} \times \mathcal{I}}\). </p>
+<p>Having this expression for the magic barrier, we used the dataset collected in the survey described at the top of this article to see whether moviepilot's algorithm still had room for improvement or whether it had hit the magic barrier. The whole process is described in detail in this paper:</p>
+<pre escaped="true" lang="bibtex">@incollection{Said:2012:UNM,<br />
+year={2012},<br />
+isbn={978-3-642-31453-7},<br />
+booktitle={User Modeling, Adaptation, and Personalization},<br />
+volume={7379},<br />
+series={Lecture Notes in Computer Science},<br />
+editor={Masthoff, Judith and Mobasher, Bamshad and Desmarais, MichelC. and Nkambou, Roger},<br />
+doi={10.1007/978-3-642-31454-4_20},<br />
+title={Users and Noise: The Magic Barrier of Recommender Systems},<br />
+url={http://dx.doi.org/10.1007/978-3-642-31454-4_20},<br />
+publisher={Springer Berlin Heidelberg},<br />
+keywords={Recommender Systems; Noise; Evaluation Measures; User Inconsistencies},<br />
+author={Said, Alan and Jain, BrijneshJ. and Narr, Sascha and Plumbaum, Till},<br />
+pages={237-248}<br />
+}</pre></p>
+<p>This post has also been posted <a href="http://irml.dailab.de/2012/07/13/the-magic-barrier-of-recommender-systems/" target="_blank">here</a>.</p>

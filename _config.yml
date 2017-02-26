@@ -1,24 +1,16 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "alan said"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : &name "Alan Said"
+description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -48,59 +40,60 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "viBhusUArEhLuB7RVJhOilj1mWGQudhyC4oR8Te2IsA"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &username "alansaid"
 facebook:
-  username               :
+  username               : &facebook "asaid"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Person # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" #false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-5445164-1"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : *name
+  avatar           : "images/avatar-mini.jpg"
+  bio              : "Information Scientist with an interest in Recommender Systems, User Modelling, and Personalization working as Lecturer at University of Skövde"
+  location         : "Gothenburg, Sweden"
+  email            : "alansaid[at]acm.org"
   uri              :
+  gscholar         : "j4cTzn0AAAAJ"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : *facebook
   foursquare       :
-  github           :
+  github           : *username
   google_plus      :
-  keybase          :
-  instagram        :
+  keybase          : *username
+  instagram        : *username
   lastfm           :
-  linkedin         :
+  linkedin         : *username
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : *username
   vine             :
   weibo            :
   xing             :
@@ -110,7 +103,7 @@ author:
 # Reading Files
 include:
   - .htaccess
-  - _pages
+  - "_pages"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -236,11 +229,21 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
+      header:
+        overlay_image: "images/panorama.jpg"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      header:
+        overlay_image: "images/panorama.jpg"
+      layout: single
+      author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true

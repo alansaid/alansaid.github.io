@@ -1,0 +1,33 @@
+---
+
+status: publish
+published: true
+title: Similarity Weighting Schemes for Collaborative Filtering
+excerpt: ""
+date: '2012-04-01 12:48:11 +0200'
+date_gmt: '2012-04-01 10:48:11 +0200'
+---
+<p>Recently I presented a paper on the effects of similarity weighting schemes on collaborative filtering recommender systems at the <a title="ACM SAC 2012" href="http://www.acm.org/conferences/sac/sac2012/" target="_blank">27th ACM Symposium on Applied Computing</a>, more specificall in the Track on <a title="TRECK" href="http://www.trustcomp.org/treck/" target="_blank">Trust, Reputation, Evidence and Collaborative Know-How.</a></p>
+<p>I received a few questions about the presentation, this post aims at answering some of them, and provide a short summary of the paper.</p>
+<p><a id="more"></a><a id="more-943"></a></p>
+<h2>Problem</h2><br />
+In any interaction dataset, a quick analysis will show that there is a large popularity bias. The reasons for this can be anything from media exposure of blockbuster movies, to the way people reason when they select to watch, buy or listen to a certain item (<a title="Collaborative prediction and ranking with non-random missing data" href="http://dx.doi.org/10.1145/1639714.1639717" target="_blank">Marlin and Zemel 2009</a>).</p>
+<p>This is quite visible in the <a title="Movielens 10M" href="http://www.grouplens.org/system/files/ml-10m-README.html" target="_blank">Movielens 10M ratings</a> and <a title="Moviepilot / CAMRa2010" href="http://www.dai-labor.de/camra2010/datasets/" target="_blank">moviepilot</a> datasets&nbsp; used in the paper.</p>
+<p>[caption id="attachment_944" align="aligncenter" width="300" caption="Popularity bias in the Movielens 10 M ratings (top) and moviepilot (bottom) datasets"]<a href="http://alans.se/wp/wp-content/uploads/movielens.png"><img class="size-medium wp-image-944 " title="Movielens 10M ratings" src="http://alans.se/wp/wp-content/uploads/movielens-300x253.png" alt="Popularity bias in the Movielens 10 M ratings dataset" width="300" height="253" /></a><a href="http://alans.se/wp/wp-content/uploads/moviepilot.png"><img class="size-medium wp-image-945 " title="Moviepilot" src="http://alans.se/wp/wp-content/uploads/moviepilot-300x242.png" alt="Ratings bias in the moviepilot dataset" width="300" height="242" /></a>[/caption]</p>
+<p>Rating-wise, this has the effect that popular items are also predominantly highly rated, in the Movielens dataset, the three most popular movies are rated with 5 stars by between 15 an 18 thousand users (i.e. 20-25% of all users).</p>
+<p>The effect of this is that many users will be similar to eachother only based on the popular, and in general, highly rated movies. Meaning movies they will get recommended might not reflect their "true" taste.</p>
+<h2>Using weighting schemes to mitigate the effects of popularity bias</h2><br />
+Weighting schemes have been used in collaborative filtering before and it has been shown that they, in general, do not add much to the performance of the system. However, no work has researched whether this is a general effect, or whether weighting schemes could improve the performance of a recommender system if applied to a group of users.</p>
+<p>For this purpose, we compared how a k Nearest Neighbor recommender performs for users who have rated few, more than few, and many items. We used three different similarity metrics for the process of building neighborhoods, cosine similarity, Pearson Correlation and Euclidean distance and measured the performance of all three types on both datasets.</p>
+<h2>&nbsp;Results</h2><br />
+The results of the experiments could be summarized as: when users have rated more than few movies, but less than many (30-100 ratings), and the rating scale is compact (1-5 stars like Movielens), then applying a weighting scheme adds to the quality of the recommendations (in terms of precision and recall).</p>
+<p>[caption id="attachment_948" align="aligncenter" width="300" caption="Improvements of the weighted approaches compared to non-weighted when using the Pearson correlation"]<a href="http://alans.se/wp/wp-content/uploads/pearson_improvements.png"><img class="size-medium wp-image-948" title="Improvements of the weighted approaches compared to non-weighted when using the Pearson correlation" src="http://alans.se/wp/wp-content/uploads/pearson_improvements-300x161.png" alt="Improvements of the weighted approaches" width="300" height="161" /></a>[/caption]</p>
+<p>The picture above shows the percental changes in terms of pecision for the recommenders using the Pearson correlation compared to the unweighted approach. The differences between the two weighting schemes used (inverse user frequency and inverse popularity) is insignificant. The axis are the number of ratings by the user on the x-axis, and the percental improvement on the y-axis.</p>
+<p>Taking a closer look at the specific recommender we see the following</p>
+<p>[caption id="attachment_949" align="aligncenter" width="300" caption="Improvement of precision on the Movielens dataset"]<a href="http://alans.se/wp/wp-content/uploads/ml_pearson.png"><img class="size-medium wp-image-949" title="Improvement of precision on the Movielens dataset" src="http://alans.se/wp/wp-content/uploads/ml_pearson-300x163.png" alt="Improvement of precision on the Movielens dataset" width="300" height="163" /></a>[/caption]</p>
+<p>which shows an improvement for users who have rated between 30 and 100 ratings. However, this improvement was not significant in the moviepilot dataset. The differences between the two datasets are primarily the rating scale, which in Movilens in 1-5 stars, and in moviepilot 0-10 stars. The more "compact" scale of Movielens creates, what we believe are, artificial similarities between users based on the popularity. This does happen in the wider rating scale of moviepilot, but the effects of the bias are lower, and thus, so will the effects of a weighting scheme be.</p>
+<p>&nbsp;</p>
+<h2>&nbsp;The Presentation</h2></p>
+<div><iframe src="http://www.slideshare.net/slideshow/embed_code/12224804" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="425" height="355"></iframe></p>
+<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/alansaid" target="_blank">Alan Said</a></div><br />
+</div></p>

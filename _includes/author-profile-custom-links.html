@@ -5,3 +5,10 @@
     </a>
   </li>
 -->
+	{% if author.gscholar %}
+    <li>
+    	<a href="http://scholar.google.com/citations?user={{ author.gscholar }}&hl=en" itemprop="samAs">
+    		<i class="ai ai-fw ai-google-scholar-square" aria-hidden="true"></i> Google Scholar
+    	</a>
+    </li>
+	{% endif %}
