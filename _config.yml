@@ -3,10 +3,10 @@ title                    : "alan said"
 title_separator          : "-"
 name                     : &name "Alan Said"
 description              : ""
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://alansaid.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+repository               : "alansaid/alansaid.github.io"
+teaser                   : "/assets/images/preview.jpg"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -52,7 +52,7 @@ facebook:
   username               : &facebook "asaid"
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/preview.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -70,7 +70,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "images/avatar-mini.jpg"
+  avatar           : "assets/images/avatar-mini.jpg"
   bio              : "Information Scientist with an interest in Recommender Systems, User Modelling, and Personalization working as Lecturer at University of Skövde"
   location         : "Gothenburg, Sweden"
   email            : "alansaid[at]acm.org"
@@ -80,7 +80,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : *facebook
+  facebook         : # *facebook
   foursquare       :
   github           : *username
   google_plus      :
@@ -167,7 +167,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Stockholm # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -234,13 +234,13 @@ defaults:
       layout: single
       author_profile: true
       header:
-        overlay_image: "images/panorama.jpg"
+        overlay_image: "assets/images/panorama.jpg"
   - scope:
       path: ""
       type: posts
     values:
       header:
-        overlay_image: "images/panorama.jpg"
+        overlay_image: "assets/images/panorama.jpg"
       layout: single
       author_profile: true
       read_time: true
