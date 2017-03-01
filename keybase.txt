@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/alansaid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://alansaid.com
+  * I am alansaid (https://keybase.io/alansaid) on keybase.
+  * I have a public key with fingerprint E818 18D8 A91A 5AC6 E514  A500 E11D C94D DC25 5703
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f6e0e51406e9924939d5b01d6df76e37e057603ed3a8031a9699140b5532ab420a",
+            "fingerprint": "e81818d8a91a5ac6e514a500e11dc94ddc255703",
+            "host": "keybase.io",
+            "key_id": "e11dc94ddc255703",
+            "kid": "0101f6e0e51406e9924939d5b01d6df76e37e057603ed3a8031a9699140b5532ab420a",
+            "uid": "c388bff45a0d1cdfaed993a763722719",
+            "username": "alansaid"
+        },
+        "revoke": {
+            "sig_ids": [
+                "0c2dd9d9ad7ec7bdf871bd9af68abf7f5541a089000400972d455c723cb42ee90f"
+            ]
+        },
+        "service": {
+            "hostname": "alansaid.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1488351916,
+    "expire_in": 157680000,
+    "prev": "64cfd28e0e464762633a290ba8182df21cb1862f9887240a7c36818030fd9ca1",
+    "seqno": 21,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.64
+Comment: https://keybase.io/crypto
+
+yMJjAnicrZJbbA1BHMZP1bUqmkaCNiLZpC51tDOzO7s7pzyICOr2JCQ0x+zM7LFp
+e/bY3dNSmiAeXBNFJMS1UpfiAdE6KC3iUoTGg7hF+uAWRJomKpFgtuFFPMo8TGbm
++3//33wzt0ZkR3KyusfdW/CyaEl21v2O3nRkaYt3Zq1iuXyNElurVIr+SVRx4Qfx
+SocrMQVAAG1dAIGhBnRBCNKISji2AOQ6tw1dqIYA2NCBKrhKTaBCSnRCpNrCWEXU
+0hCgSlSxnWRCeCnPSQbSVphQDm5SAimmTA/tKQZAQMgZ0ThnCGMDqLJwpeuHFRLO
+or4ocVy5Jxfxfrx/6P8zd7rfjqmmadm2hingkHGbCk6ISg1dNRAyIAmFvvCStFpI
+Na2iSZ/Kwvqo4okat1KEufpOQkL7SmyZAhjinHBCuSGYYXHbNKAll7ZuUss2bIw1
+SIFJAAAaAMRAXMOYGUhlEksIAmylQnrLjjUO6zcPU/qrewlzqyVXynMDl7lV8mRl
+EKRiIVSwJhUqa4UV/+0Rt5wkl08kC2qE5ztuUolBqWSBE5pCzTRVDAnUo4pYnXI8
+EXdChQzQlJAgbCNqpKWuMZsjUwav6ZqhI11VKSLAovK5EbcRZBY0dWQT0zSQBqjB
+VF0eARXYnDAKlfBWq5KuEkNQctKE9JTBJWmQ9oRSf6N9+cBIVk5k8KAB4d+N5AzL
++/OjrzQN+Tk/9jGret7Stm9fSwt23zma+fJ9n9OdW9jmbe10d7a2TsljQx6c/trU
+tz9+tmfHtfePuw8OX7T3c+KOte3c+LuNV68fntOwL1jlTxrpZmcOpXdZwcbMwvKi
+A9tWTI7XFT/8XlS+7scld9fpGZHPm3v9mV3R289nTC96Yi0ovDSqtqd56oaGZ22t
+p4b2vWh6NLa9/nVLemRLsKUgP7d54sKW4rryC7PfR/FTPKZrWvnxvc1ll7uGrp92
++1Pxm5f5iYaP4266T+8ebhK9H6pfncwr6+zsa3wXtB6rzWw6v7jj7J4bEyqWxVOD
+vBOjN3RUlJaluuf3Ds80giPbp869WFZ7cNbb3MuzE49/ASd9Xws=
+=IS2U
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alansaid
+
+==================================================================
