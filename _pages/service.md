@@ -36,8 +36,8 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - **ACM TVX** [2015](https://tvx.acm.org/2015/), [2016](https://tvx.acm.org/2016/), [2017](https://tvx.acm.org/2017/) - Associate Chair
 
 ## Workshop Organization Committees
-- [**Recommendation in Complex Scenarios**](http://) - ACM RecSys 2017
-- [**Engendering Health With RecSys**](http://healthrecsys.ur.de) - ACM RecSys 2016, 2017
+- [**Recommendation in Complex Scenarios**](http://complexrec2017.aau.dk/) - ACM RecSys 2017
+- [**Health Recommender Systems**](http://healthrecsys.ur.de) - ACM RecSys 2016, 2017
 - [**Surprise, Opposition, and Obstruction in Adaptive and Personalized Systems**](https://soapworkshop2016.wordpress.com/) - UMAP 2016, 2017 
 - [**Context-awarenes in Retrieval and Recommendation**](http://carr-workshop.org) - ECIR 2015, ECIR 2014, WSDM 2013, IUI 2012, IUI 2011
 - [**Recomender Systems Challenge**](http://www.recsyschallenge.com) - ACM RecSys [2010](http://2010.recsyschallenge.com), [2011](http://2011.recsyschallenge.com), [2012](http://2012.recsyschallenge.com), [2014](http://2014.recsyschallenge.com)
@@ -84,7 +84,8 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - **JASIST**
 
 ## Workshop Programme Committees
-- [**Towards comparative evaluation in user modeling, adaptation and personalization**](http://evalumap.adaptcentre.ie/) - UMAP 2016
+- [**Intelligent Recommender Systems by Knowledge Transfer & Learning**](https://recsysktl.wordpress.com/) -- RecSys 2017
+- [**Towards comparative evaluation in user modeling, adaptation and personalization**](http://evalumap.adaptcentre.ie/) - UMAP 2016, 2017
 - [**Multi-dimensional Information Fusion for User Modeling and Personalization**](http://ifup2016.luckymoon.me) - UMAP 2016
 - [**Big, LINKed and Social data for User Modeling and Personalized Intelligent Systems**](http://www.di.uniba.it/~swap/blinks/) - UMAP 2016
 - [**Modeling Social Media**](https://www.kde.cs.uni-kassel.de/ws/msm2016/) - SIGIR 2016, [Hypertext 2013](http://www.kde.cs.uni-kassel.de/ws/msm2013/)
