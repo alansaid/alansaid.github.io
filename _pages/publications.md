@@ -38,6 +38,7 @@ author_profile: true
 1. **A Comparison of How Demographic Data Affects Recommendation**. Alan Said, Till Plumbaum, Ernesto W. De Luca, Sahin Albayrak. 2011. UMAP 2011. [<i class="fa fa-fw fa-file-pdf-o" />](http://files.alans.se/papers/2011-umap-demographics.pdf)
 
 # Workshop Publications
+1. **A Billiard Metaphor for Exploring Complex Graphs**. Elio Ventocilla, Juhee Bae, Maria Riveiro, Alan Said. 2017. Supporting Complex Search Tasks 2017. [<i class="fa fa-fw fa-file-pdf-o" />](http://ceur-ws.org/Vol-1798/paper9.pdf)
 1. **Recommending Recipes for Balanced Nutrition**. David Elsweiler, Morgan Harvey, Alan Said, Bernd Ludwig. 2015. Beyond Health 2015. [<i class="fa fa-fw fa-file-pdf-o" />](http://files.alans.se/papers/2015-ehealth-nutrition.pdf)
 1. **Bringing the "healthy" into Foor Recommenders** David Elsweiler, Morgan Harvey, Bernd Ludwig, Alan Said. 2015. DMRS 2015: 33-36 [<i class="fa fa-fw fa-file-pdf-o" />](http://ceur-ws.org/Vol-1533/paper8.pdf)
 1. **You Are What You Eat! Tracking Health Through Recipe Interactions**. Alan Said, Alejandro Bellogín. 2014. RSWeb 2014. [<i class="fa fa-fw fa-file-pdf-o" />](http://ls13-www.cs.uni-dortmund.de/homepage/rsweb2014/papers/rsweb2014_submission_15.pdf)
