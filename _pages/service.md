@@ -19,6 +19,7 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - [ACM RecSys 2019](http://recsys.acm.org/recsys19) - General Co-Chair
 - [ACM IUI 2018](http://iui.acm.org/2018) - Workshop and Tutorial Co-chair
 - [ACM RecSys 2017](http://recsys.acm.org/recsys17) - Industry Co-Chair
+- [ACM VRST 2017](http://vrst.acm.org/vrst2017) - Sponsorship Co-Chair
 - [ACM RecSys 2016](http://recsys.acm.org/recsys16) - Publicity Co-Chair
 - [NordiCHI 2016](http://nordichi2016.org) - Industry Experiences Co-Chair
 - [ACM RecSys 2015](http://recsys.acm.org/recsys15) - Workshop Co-Chair
