@@ -47,6 +47,7 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - [**Movie Hack Day**](http://moviehackday.com) - Berlin Buzzwords 2011, 2012
 
 ## Conference Program Committees
+- **ACM CSCW** [2018](http://cscw.acm.org/2018/)
 - **WWW** [2016](http://www2016.ca/), [2017](http://www.www2017.com.au/)
 - **[ACM RecSys](http://recsys.acm.org)** 2012, 2013, 2014, 2015, 2016, 2017
 - **ACM IUI** [2015](http://iui.acm.org/2015), [2016](http://iui.acm.org/2016), [2017](http://iui.acm.org/2017)
