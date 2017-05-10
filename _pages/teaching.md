@@ -10,6 +10,7 @@ Recent courses I am or have been involved in.
 
 ## 2017 ## 
 
+- [**Data Mining A1N, 7,5 ECTS, IT726A**](http://www.his.se/en/Prospective-student/education/courses/ITE/IT721A/) - University of Skövde, fall 2017
 - [**Data Mining A1F, 7,5 ECTS, IT721A**](http://www.his.se/en/Prospective-student/education/courses/ITE/IT721A/) - University of Skövde, spring 2017
 
 ## 2016 ##
