@@ -86,6 +86,7 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - **JASIST**
 
 ## Workshop Programme Committees
+- [**Rebooting the Conversational Recommender Systems**](https://recover17.wordpress.com/) -- RecSys 2017
 - [**Intelligent Recommender Systems by Knowledge Transfer & Learning**](https://recsysktl.wordpress.com/) -- RecSys 2017
 - [**Towards comparative evaluation in user modeling, adaptation and personalization**](http://evalumap.adaptcentre.ie/) - UMAP 2016, 2017
 - [**Multi-dimensional Information Fusion for User Modeling and Personalization**](http://ifup2016.luckymoon.me) - UMAP 2016
