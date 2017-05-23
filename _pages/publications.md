@@ -16,6 +16,7 @@ author_profile: true
 1. [**Movie Recommendation in Context**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2414425.2414438). Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2013. ACM Trans. Intell. Syst. Technol. (TIST), Vol.4, NO.1, 2013
 
 # Conference Publications
+1. **User Nutrition Modelling and Recommendation - Balancing Simplicity and Complexity**. H. Schaefer, M. Elahi, D. Elsweiler, G. Groh, M. Harvey, B. Ludwig, F. Ricci, A. Said.  2017. ACM UMAP
 1. **Towards Health (Aware) Recommender Systems**. H. Schaefer, S. Hors-Fraile, R. Karumur, A. Calero Valdez, and A. Said, H. Torkamaan, T. Ulmer, and C. Trattner.  2017. ACM Digital Health
 1. [**Predicting Cyber Vulnerability Exploits with Machine Learning**<i class="ai ai-doi" />](http://dx.doi.org/10.3233/978-1-61499-589-0-48). Michel Edkrantz, and Alan Said. 2015. SCAI 2015: 48-57 <i class="fa fa-fw fa-file-pdf-o" />
 1. [**Predicting Vulnerability Exploits in the Wild**<i class="ai ai-doi" />](http://dx.doi.org/10.1109/CSCloud.2015.56). Michel Edkrantz, Staffan Truvé, and Alan Said. 2015. CSCloud 2015: 513-514
