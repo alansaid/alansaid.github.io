@@ -13,7 +13,7 @@ author_profile: true
 # Journal Papers
 1. **A Short History of the RecSys Challenge**. Alan Said. 2016. AI Magazine, Vol.36, NO.4, 2016. [<i class="fa fa-fw fa-link" />](http://www.aaai.org/ojs/index.php/aimagazine/article/view/2693)
 1. **RiVal - A New Benchmarking Toolkit For Recommender Systems**. Alan Said, Alejandro Bellogín. 2014. ERCIM News, Vol.99, 2014. [<i class="fa fa-fw fa-link" />](http://ercim-news.ercim.eu/en99/special/rival-a-new-benchmarking-toolkit-for-recommender-systems)
-1. **Movie Recommendation in Context**[<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2414425.2414438). Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2013. ACM Trans. Intell. Syst. Technol. (TIST), Vol.4, NO.1, 2013
+1. **Movie Recommendation in Context**. Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2013. ACM Trans. Intell. Syst. Technol. (TIST), Vol.4, NO.1, 2013 [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2414425.2414438)
 
 # Conference Publications
 1. **User Nutrition Modelling and Recommendation - Balancing Simplicity and Complexity**. H. Schaefer, M. Elahi, D. Elsweiler, G. Groh, M. Harvey, B. Ludwig, F. Ricci, A. Said.  2017. ACM UMAP
@@ -46,20 +46,20 @@ author_profile: true
 1. **You Are What You Eat! Tracking Health Through Recipe Interactions**. Alan Said, Alejandro Bellogín. 2014. RSWeb 2014. [<i class="fa fa-fw fa-file-pdf-o" />](http://ls13-www.cs.uni-dortmund.de/homepage/rsweb2014/papers/rsweb2014_submission_15.pdf)
 1. **A Top-N Recommender System Evaluation Protocol Inspired by Deployed Systems**. Alan Said, Alejandro Bellogín, Arjen P De Vries. 2013. LSRS 2013. [<i class="fa fa-fw fa-file-pdf-o" />pdf](http://graphlab.com/files/lsrs2013/paper_12.pdf)
 1. **Activating the Crowd: Exploiting User-Item Reciprocity for Recommendation**. Martha Larson, Alan Said, Yue Shi, Paolo Cremonesi, Domonkos Tikk, Alexandros Karatzoglou. 2013. CrowdRec 2013. [<i class="fa fa-fw fa-file-pdf-o" />](http://crowdrec2013.noahlab.com.hk/papers/crowdrec2013_Larson.pdf)
-1. [**A Month in the Life of a Production News Recommender System**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2513150.2513159). Alan Said, Jimmy Lin, Alejandro Bellogín, Arjen P De Vries. 2013. LivingLab 2013.
+1. **A Month in the Life of a Production News Recommender System**. Alan Said, Jimmy Lin, Alejandro Bellogín, Arjen P De Vries. 2013. LivingLab 2013. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2513150.2513159)
 1. **Recommender Systems Evaluation: A 3D Benchmark**. Alan Said, Domonkos Tikk, Klara Stumpf, Yue Shi, Martha Larson, Paolo Cremonesi. 2012. RUE 2012. [<i class="fa fa-fw fa-file-pdf-o" />](http://ceur-ws.org/Vol-910/paper4.pdf)
-1. [**Semantic Preference Retrieval for Querying Knowledge Bases**<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-31454-4_20). Christian Scheel, Alan Said, Sahin Albayrak. 2012. JIWES 2012.
+1. **Semantic Preference Retrieval for Querying Knowledge Bases**. Christian Scheel, Alan Said, Sahin Albayrak. 2012. JIWES 2012. [<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-31454-4_20)
 1. **Increasing Diversity Through Furthest Neighbor-Based Recommendation**. Alan Said, Brijnesh J. Jain, Benjamin Kile, Sahin Albayrak. 2012. DDR 2012. [<i class="fa fa-fw fa-file-pdf-o" />](http://www.dcs.gla.ac.uk/workshops/ddr2012/papers/p3said.pdf)
-1. [**Group Recommendation in Context**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2096112.2096113). Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2011. CAMRa 2011.
-1. [**Personalizing Tags: A Folksonomy-like Approach for Recommending Movies**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2039320.2039328). Alan Said, Ernesto W. De Luca. 2011. HetRec 2011.
+1. **Group Recommendation in Context**. Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2011. CAMRa 2011. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2096112.2096113)
+1. **Personalizing Tags: A Folksonomy-like Approach for Recommending Movies**. Alan Said, Ernesto W. De Luca. 2011. HetRec 2011. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2039320.2039328)
 1. **Inferring Contextual User Profiles - Improving Recommender Performance**. Alan Said, Ernesto W. De Luca. 2011. CARS 2011.
 1. **Using Social and Pseudo Social Networks for Improved Recommendation Quality**. Alan Said, Ernesto W. De Luca, Sahin Albayrak. 2011. ITWP 2011.
-1. [**Putting things in context**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1869652.1869665). Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2010. CAMRa 2010.
-1. [**Exploiting hierarchical tags for context-awareness**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1871962.1871984) Alan Said, Jerome Kunegis, Ernesto W. De Luca. 2010. ESAIR 2010.
+1. **Putting things in context**. Alan Said, Shlomo Berkovsky, Ernesto W. De Luca. 2010. CAMRa 2010. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1869652.1869665)
+1. **Exploiting hierarchical tags for context-awareness**. Alan Said, Jerome Kunegis, Ernesto W. De Luca. 2010. ESAIR 2010. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1871962.1871984)
 1. **How social relationships affect user similarities**. Alan Said, Ernesto W. De Luca. 2010. SRS 2010.
 1. **Understanding the user: Personomy translation for tag-recommendation**. Robert Wetzker, Alan Said, Carsten Zimmermann. 2009. ECML-PKDD DC 2009.
 1. **A Hybrid PLSA Approach for Warmer Cold Start in Folksonomy Recommendation**. Alan Said, Robert Wetzker, Winfried Umbrath, Leonhard Hennig. 2009. RSWeb 2009.
-1. [**A hybrid approach to item recommendation in folksonomies**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1506250.1506255). Robert Wetzker, Winfried Umbrath, Alan Said. 2009. ESAIR 2009.
+1. **A hybrid approach to item recommendation in folksonomies**. Robert Wetzker, Winfried Umbrath, Alan Said. 2009. ESAIR 2009. [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/1506250.1506255)
 
 # Edited Volumes
 1. Proceedings of the **ACM RecSys Challenge 2014**. Alan Said, Simon Dooms, Babak Loni, Domonkos Tikk. 2014. ACM RecSys.
@@ -72,14 +72,14 @@ author_profile: true
 1. Proceedings of the **2010 Challenge on Context-aware Movie Recommendation**. Alan Said, Ernesto W. De Luca, Shlomo Berkovsky, Jannis Hermanns. 2011. ACM RecSys.
 
 # Books, book chapters, and theses
-1. [**Benchmarking: A Methodology for Ensuring the Relative Quality of a Recommendation System for Software Engineering**<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-45135-5_11). Alan Said, Domonkos Tikk, Paolo Cremonesi. Book chapter: [Recommendation Systems in Software Engineering](https://www.springer.com/computer/swe/book/978-3-642-45134-8?otherVersion=978-3-642-45135-5), eds. M.P. Robillard, W. Maalej, R.J. Walker, T. Zimmerman. Springer. 2014, Berlin, Germany
+1. **Benchmarking: A Methodology for Ensuring the Relative Quality of a Recommendation System for Software Engineering**. Alan Said, Domonkos Tikk, Paolo Cremonesi. Book chapter: [Recommendation Systems in Software Engineering](https://www.springer.com/computer/swe/book/978-3-642-45134-8?otherVersion=978-3-642-45135-5), eds. M.P. Robillard, W. Maalej, R.J. Walker, T. Zimmerman. Springer. 2014, Berlin, Germany [<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-45135-5_11)
 1. **Evaluating the Accuracy and Utility of Recommender Systems**. Alan Said. Thesis for the degree Doktor der Ingenieurwissenschaften. TU Berlin, 2013, Berlin, Germany [<i class="fa fa-fw fa-link" />](http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:kobv:83-opus-39178)
 
 # Abstracts
-1. Tutorial on [**Replicable Evaluation of Recommender Systems**<i class="ai ai-doi" />](https://doi.org/10.1145/2792838.2792841). Alan Said, Alejandro Bellogín. 2015. ACM RecSys.
-1. Tutorial on [**The Challenge of Recommender Systems Challenges**<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2365952.2365959). Alan Said, Domonkos Tikk, Andreas Hotho. 2012. ACM RecSys
+1. Tutorial on **Replicable Evaluation of Recommender Systems**. Alan Said, Alejandro Bellogín. 2015. ACM RecSys. [<i class="ai ai-doi" />](https://doi.org/10.1145/2792838.2792841)
+1. Tutorial on **The Challenge of Recommender Systems Challenges**. Alan Said, Domonkos Tikk, Andreas Hotho. 2012. ACM RecSys [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2365952.2365959)
 
 # Other Publications
-1. [**The Not-so-Magic Magic Barrier of Recommender Systems**](http://tinytocs.org/vol3/papers/TinyToCS_3_bellogin.pdf). Alejandro Bellogín, and Alan Said. 2015. TinyToCS 3
-1. [**Non-transparent recommender system evaluation leads to misleading results**](http://tinytocs.org/vol3/papers/TinyToCS_3_said.pdf). Alan Said, and Alejandro Bellogín. 2015. TinyToCS 3
+1. **The Not-so-Magic Magic Barrier of Recommender Systems**. Alejandro Bellogín, and Alan Said. 2015. TinyToCS 3. [<i class="fa fa-fw fa-file-pdf-o" />](http://tinytocs.org/vol3/papers/TinyToCS_3_bellogin.pdf)
+1. **Non-transparent recommender system evaluation leads to misleading results**. Alan Said, and Alejandro Bellogín. 2015. TinyToCS 3 [<i class="fa fa-fw fa-file-pdf-o" />](http://tinytocs.org/vol3/papers/TinyToCS_3_said.pdf)
 
