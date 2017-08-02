@@ -7,11 +7,11 @@ excerpt: "Papers, papers, papers, papers."
 author_profile: true
 ---
 
-[Google Scholar](http://scholar.google.com/citations?user=j4cTzn0AAAAJ) makes a better job at keeping this list up to date. You can also find me on [ACM DL](http://dl.acm.org/author_page.cfm?id=81413593442&amp;coll=DL&amp;dl=GUIDE&amp;CFID=54192838&amp;CFTOKEN=44164314), and [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/s/Said:Alan.html). 
+[Google Scholar](http://scholar.google.com/citations?user=j4cTzn0AAAAJ) makes a better job at keeping this list up to date. You can also find me on [ACM DL](http://dl.acm.org/author_page.cfm?id=81413593442), and [DBLP](http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/s/Said:Alan.html). 
 
 
 # Journal Papers
-1. **A Short History of the RecSys Challenge**. A. Said. 2016. AI Magazine, Vol.36, NO.4, 2016. [<i class="fa fa-fw fa-link" />](http://www.aaai.org/ojs/index.php/aimagazine/article/view/2693)
+1. **A Short History of the RecSys Challenge**. A. Said. 2016. AI Magazine, Vol.36, NO.4, 2016. [<i class="fa fa-fw fa-link" />](http://www.aaai.org/ojs/index.php/aimagazine/article/view/2693)[<i class="ai ai-doi" />](https://doi.org/10.1609/aimag.v37i4.2693)
 1. **RiVal - A New Benchmarking Toolkit For Recommender Systems**. A. Said, A. Bellogín. 2014. ERCIM News, Vol.99, 2014. [<i class="fa fa-fw fa-link" />](http://ercim-news.ercim.eu/en99/special/rival-a-new-benchmarking-toolkit-for-recommender-systems)
 1. **Movie Recommendation in Context**. A. Said, S. Berkovsky, E. W. De Luca. 2013. ACM Trans. Intell. Syst. Technol. (TIST), Vol.4, NO.1, 2013 [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2414425.2414438)
 
