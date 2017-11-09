@@ -56,7 +56,7 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - UMAP [2014](http://www.um.org/umap2014/), [2015](http://umap2015.com/), [2016](http://www.um.org/umap2016/), [2017](http://www.um.org/umap2017/)
 - ECIR [2014](http://ecir2014.org/), [2015](http://ecir2015.org), [2016](http://ecir2016.dei.unipd.it/), [2017](http://ecir2017.org/), [2018](http://ecir2018.org/) 
 - ECMLPKDD [2013](http://www.ecmlpkdd2013.org/), [2014](http://ecmlpkdd2014.loria.fr/), [2015](http://www.ecmlpkdd2015.org/), [2016](http://ecmlpkdd2016.org/), [2017](http://ecmlpkdd2017.org/)
-- Hypertext [2013](https://ht.acm.org/ht2013/), [2014](https://ht.acm.org/ht2014/), [2015](https://ht.acm.org/ht2015/), [2017](https://ht.acm.org/ht2017/)
+- Hypertext [2013](https://ht.acm.org/ht2013/), [2014](https://ht.acm.org/ht2014/), [2015](https://ht.acm.org/ht2015/), [2017](https://ht.acm.org/ht2017/), [2018 (Senior PC)](https://ht.acm.org/ht2018/)
 - FLAIRS [2015](http://www.flairs-28.info/), [2016](http://www.flairs-29.info/), [2017](http://www.flairs-30.info/)
 - CIKM [2016](http://cikm2016.cs.iupui.edu), [2017](http://www.cikm2017.org/)
 - ISWC [2016](http://iswc2016.semanticweb.org/)
