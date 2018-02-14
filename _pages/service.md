@@ -47,6 +47,7 @@ I started [RecSysWiki](http://www.recsyswiki.com), was involved in launching the
 - [Movie Hack Day](http://moviehackday.com) - Berlin Buzzwords 2011, 2012
 
 ## Conference Program Committees
+- IEEE CBI [2018](https://cbi2018.big.tuwien.ac.at/)
 - ACM CSCW [2018](http://cscw.acm.org/2018/)
 - WWW [2016](http://www2016.ca/), [2017](http://www.www2017.com.au/), [2018](https://www2018.thewebconf.org/)
 - ACM IUI [2015](http://iui.acm.org/2015), [2016](http://iui.acm.org/2016), [2017](http://iui.acm.org/2017), [2018](http://iui.acm.org/2018)
