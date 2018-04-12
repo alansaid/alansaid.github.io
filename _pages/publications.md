@@ -73,7 +73,9 @@ author_profile: true
 1. Proceedings of the **2010 Challenge on Context-aware Movie Recommendation**. A. Said, E. W. De Luca, S. Berkovsky, J. Hermanns. 2011. ACM RecSys.
 
 # Books, book chapters, and theses
-1. **Benchmarking: A Methodology for Ensuring the Relative Quality of a Recommendation System for Software Engineering**. A. Said, D. Tikk, P. Cremonesi. Book chapter: [Recommendation Systems in Software Engineering](https://www.springer.com/computer/swe/book/978-3-642-45134-8?otherVersion=978-3-642-45135-5), eds. M.P. Robillard, W. Maalej, R.J. Walker, T. Zimmerman. Springer. 2014, Berlin, Germany [<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-45135-5_11)
+1. **Evaluating Group Recommender Systems**. C. Trattner, A. Said, L. Boratto, A. Felfernig. In A. Felfernig, L. Boratto, M. Stettinger, M. Tkalcic (Eds.), <a href="https://www.springer.com/gp/book/9783319750668" target="_blank">Group Recommender Systems: An introduction</a>. Springer International Publishing, 2018. DOI: 10.1007/978-3-319-75067-5
+1. **Recommender Systems Evaluation***. A. Bellogín and A. Said. In R. Alhajj and J. Rokne (Eds.), Encyclopedia of Social Network Analysis and Mining. Springer Science+Business Media, 2019. DOI: 10.1007/978-1-4614-7163-9_110162-1 
+1. **Benchmarking: A Methodology for Ensuring the Relative Quality of a Recommendation System for Software Engineering**. A. Said, D. Tikk, P. Cremonesi. In [Recommendation Systems in Software Engineering](https://www.springer.com/computer/swe/book/978-3-642-45134-8?otherVersion=978-3-642-45135-5), eds. M.P. Robillard, W. Maalej, R.J. Walker, T. Zimmerman. Springer. 2014, Berlin, Germany [<i class="ai ai-doi" />](http://dx.doi.org/10.1007/978-3-642-45135-5_11)
 1. **Evaluating the Accuracy and Utility of Recommender Systems**. A. Said. Thesis for the degree Doktor der Ingenieurwissenschaften. TU Berlin, 2013, Berlin, Germany [<i class="fa fa-fw fa-link" />](http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:kobv:83-opus-39178)
 
 # Abstracts
