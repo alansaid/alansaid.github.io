@@ -11,6 +11,7 @@ author_profile: true
 
 
 # Journal Papers
+1. **Coherence and Inconsistencies in Rating Behavior - Estimating the Magic Barrier of Recommender Systems** A. Said, A. Bellogín. 2018. UMUAI
 1. **A Short History of the RecSys Challenge**. A. Said. 2016. AI Magazine, Vol.36, NO.4, 2016. [<i class="fa fa-fw fa-link" />](http://www.aaai.org/ojs/index.php/aimagazine/article/view/2693)[<i class="ai ai-doi" />](https://doi.org/10.1609/aimag.v37i4.2693)
 1. **RiVal - A New Benchmarking Toolkit For Recommender Systems**. A. Said, A. Bellogín. 2014. ERCIM News, Vol.99, 2014. [<i class="fa fa-fw fa-link" />](http://ercim-news.ercim.eu/en99/special/rival-a-new-benchmarking-toolkit-for-recommender-systems)
 1. **Movie Recommendation in Context**. A. Said, S. Berkovsky, E. W. De Luca. 2013. ACM Trans. Intell. Syst. Technol. (TIST), Vol.4, NO.1, 2013 [<i class="ai ai-doi" />](http://dx.doi.org/10.1145/2414425.2414438)
