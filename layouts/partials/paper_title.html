@@ -1,0 +1,30 @@
+    {{- $taxonomy := "authors" }}
+    {{ if .Param $taxonomy }}
+      {{ range $index, $value := (.GetTerms $taxonomy) }}
+        {{- /* Highlight the author's name? */ -}}
+        {{- $highlight_name := .Page.Params.highlight_name | default false -}}
+        {{- if gt $index 0 }}, {{ end -}}
+        <span {{ if $highlight_name }}class="author-highlighted"{{end}}>
+          {{/* Effectively check the page's `_build` option as `_build` is not exposed in Hugo's Page object. */}}
+          {{- if .RelPermalink -}}
+            <a href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+          {{- else -}}
+            {{ .LinkTitle }}
+          {{- end -}}
+        </span>
+        {{- if isset $.Params "author_notes" -}}
+          {{- with (index $.Params.author_notes $index) -}}
+            <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="{{.}}"></i>
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}.
+    <span style="color: #F76497;">{{.Params.date.Year}}</span>, 
+    <span style="color: #3DBEFF;">"{{.Params.title}}".</span>
+    {{.Params.publication | markdownify}}.
+    {{ if .Params.rate }}
+      Acceptance rate {{.Params.rate}}
+    {{end}}
+    {{if eq .Params.hasimage true}}
+    <img style="float: right; margin: 35px 0px 15px 15px;" src="featured.png" width="35%">
+    {{end}}

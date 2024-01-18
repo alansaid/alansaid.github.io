@@ -1,0 +1,112 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+
+appearance:
+  theme_day: earth
+  #theme_night: dark
+  theme_night: mr_robot
+  font: minimal
+  font_size: M
+
+# SEO
+
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: 'Alan Said is associate professor at University of Gothenburg. His research spans the fields of user modeling, personalization, recommender systems, evaluation, and reproducibility.'
+    twitter: 'alansaid'
+  analytics:
+    google_analytics: 'UA-5445164-1'
+    baidu_tongji: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+
+header:
+  navbar:
+    enable: true
+    align: l
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
+
+# Site footer
+
+footer:
+  copyright:
+    notice: '© {year} Alan Said.'
+
+# Localization
+
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '12:04'
+  address_format: en-us
+
+# Site features
+
+features:
+  syntax_highlighter:
+    theme_light: github-light
+    theme_dark: dracula
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/alansaid/alansaid.github.io'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+
+# Extensions
+
+extensions:
+  cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+
+# Security
+
+security:
+  # Allow frame for embedding speaker notes in slides
+  allow_frame: true
