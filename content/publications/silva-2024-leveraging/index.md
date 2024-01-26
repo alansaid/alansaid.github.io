@@ -54,12 +54,11 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-# Custom links (uncomment lines below)
-#links:
-#- icon: 'file-pdf'
-#  icon_pack: far
-#  name: preprint
-#  url: preprint.pdf
+links:
+- icon: 'file-pdf'
+  icon_pack: far
+  name: preprint
+  url: silva-2024-leveraging.pdf
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.
