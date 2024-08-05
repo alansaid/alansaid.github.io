@@ -28,10 +28,10 @@ publication_types:
 - paper-conference
 
 # Publication name and optional abbreviated publication name.
-publication: 'To Appear in *Proceedings of the 29th ACM Conference on Intelligent User Interfaces*'
+publication: '*Proceedings of the 29th ACM Conference on Intelligent User Interfaces*'
 publication_short: ''
 
-doi: ''
+doi: '10.1145/3640543.3645171'
 
 abstract: The adoption of recommender systems (RSs) in various domains has become increasingly popular, but concerns have been raised about their lack of transparency and interpretability. While significant advancements have been made in creating explainable RSs, there is still a shortage of automated approaches that can deliver meaningful and contextual human-centered explanations. Numerous researchers have evaluated explanations based on human-generated recommendations and explanations to address this gap. However, such approaches do not scale for real-world systems. Building on recent research that exploits Large Language Models (LLMs) for RSs, we propose leveraging the conversational capabilities of ChatGPT to provide users with personalized, human-like, and meaningful explanations for recommended items. Our paper presents one of the first user studies that measure users' perceptions of ChatGPT-generated explanations while acting as an RS. Regarding recommendations, we assess whether users prefer ChatGPT over random (but popular) recommendations. Concerning explanations, we assess users' perceptions of personalization, effectiveness, and persuasiveness.  Our findings reveal that users tend to prefer ChatGPT-generated recommendations over popular ones. Additionally, personalized rather than generic explanations prove to be more effective when the recommended item is unfamiliar.
 

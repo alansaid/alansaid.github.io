@@ -27,7 +27,7 @@ publication_types:
 - paper-conference
 
 # Publication name and optional abbreviated publication name.
-publication: 'To Appear in *Proceedings of the 2024 Conference on Human Information Interaction and Retrieval*'
+publication: '*Proceedings of the 2024 Conference on Human Information Interaction and Retrieval*'
 publication_short: ''
 
 doi: '10.1145/3627508.3638294'

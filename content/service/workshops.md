@@ -19,6 +19,9 @@ date_format: Jan 2006
 design:
   columns: '2'
 ---
+- [NPD 2024](https://personalizationday.github.io/2024/): Nordic Personalization Days
+- [INTROSPECTIVES 2024](https://introspectives.github.io/2024/)@ACM RecSys: Workshop on Reflections on Recommender Systems: Past, Present, and Future
+- [AltRecSys 2024](https://altrecsys.github.io/)@ACM RecSys: Workshop on Alternative, Unexpected, and Critical Ideas in Recommendation
 - [Dagstuhl Seminar 24211](https://www.dagstuhl.de/24211): Evaluation Perspectives of Recommender Systems: Driving Research and Education
 - [PERSPECTIVES 2023](https://perspectives-ws.github.io/2023/)@ACM RecSys: 3rd Workshop on the Perspectives on the Evaluation of Recommender Systems
 - [PERSPECTIVES 2022](https://perspectives-ws.github.io/2022/)@ACM RecSys: 2nd Workshop on the Perspectives on the Evaluation of Recommender Systems
