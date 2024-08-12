@@ -13,7 +13,7 @@ address:
   postcode: 
   country: The Netherlands
 
-summary: Personalization Through The Evolution of Tastes
+summary: EAISI Visiting Professor Lecture
 abstract: 'In a rapidly advancing digital age, understanding the intricacies of personal preferences has become important for the development of personalization and recommendation systems. This talk examines the dynamic nature of human preferences, exploring how they evolve over time and their implications on personalization strategies within recommendation systems. By examining music listening behaviors as a tangible, empirical example, the discussion highlights patterns in how preferences shift across different stages of life. The journey of musical tastes, from the broad exploration of youth to the refined selections of older age, serves as a compelling narrative for the broader phenomena of evolving preferences. It uncovers the challenges and opportunities in creating recommendation systems that adapt to the nuanced changes in individual tastes over time. The talk will discuss how evolving preferences can guide the development of more personalized, responsive, and ultimately, human-centric recommendation systems. Recommender systems rely on machine learning and data science when generating recommendations. This talk will explore the complex interplay between age, experience, and preference, and how this knowledge can be leveraged to design AI systems that better cater to the shifting landscape of human preferences and interests.'
 
 # Talk start and end times.

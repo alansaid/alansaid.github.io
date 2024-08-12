@@ -13,7 +13,7 @@ address:
   postcode: 
   country: The Netherlands
 
-summary: Recommender systems and trust in e-commerce
+summary: RecSys NL
 abstract: 'This talk explores the role of recommender systems in building consumer trust within the fashion e-commerce industry. With the Trust Building Model (TBM) as a foundation, it demonstrates how aspects such as recommendation quality, user experience, and authenticity can affect trust. Highlighting the significance of competence belief in the recommendations provided, the talk suggests strategies for improving the effectiveness and reliability of these systems. Through actionable insights on personalizing user experiences and ensuring the authenticity of recommendations, the discussion aims to show how recommender systems can be utilized to establish stronger, trust-based relationships with consumers in the fashion e-commerce sector.'
 
 # Talk start and end times.
