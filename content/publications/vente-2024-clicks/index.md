@@ -54,11 +54,11 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-#links:
-#- icon: 'file-pdf'
-#  icon_pack: far
-#  name: preprint
-#  url: vente-2024-clicks.pdf
+links:
+- icon: 'arxiv'
+  icon_pack: ai
+  name: preprint
+  url: https://arxiv.org/abs/2408.08203
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.
