@@ -53,10 +53,10 @@ url_source: ''
 url_video: ''
 
 links:
-#- icon: 'arxiv'
-#  icon_pack: ai
-#  name: preprint
-#  url: https://arxiv.org/abs/2408.08203
+- icon: 'arxiv'
+  icon_pack: ai
+  name: preprint
+  url: https://arxiv.org/abs/2409.03893
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.
