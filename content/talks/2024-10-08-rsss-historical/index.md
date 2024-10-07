@@ -22,6 +22,7 @@ abstract: "In this talk I give a historical overview of recommender systems. Sta
   2. [Cover and Hart. Nearest neighbor pattern classification. (1967)](https://ieeexplore.ieee.org/document/1053964)  
 
   3. [Karlgren. An Algebra for Recommendations. (1990)](https://jussikarlgren.wordpress.com/wp-content/uploads/1990/09/algebrawp.pdf)  
+ 
   4. [Goldberg, Nichols, Oki, and Terry. Using collaborative filtering to weave an information tapestry. (1992)](https://doi.org/10.1145/138859.138867)  
 
   5. [Resnick, Iacovou, Suchak, Bergstrom, and Riedl. GroupLens: an open architecture for collaborative filtering of netnews. (1994)](https://doi.org/10.1145/192844.192905)  
@@ -55,7 +56,7 @@ abstract: "In this talk I give a historical overview of recommender systems. Sta
   19. [Ferrari Dacrema, Cremonesi, and Jannach. Are we really making much progress? A worrying analysis of recent neural recommendation approaches. (2019)](https://doi.org/10.1145/3298689.3347058)  
 
   20. [Said and Bellogín. Comparative recommender system evaluation: benchmarking recommendation frameworks. (2014)](https://doi.org/10.1145/2645710.2645746)  
-  
+
   21. [Armstrong, Moffat, Webber, and Zobel. Improvements that don't add up: ad-hoc retrieval results since 1998. (2009)](https://doi.org/10.1145/1645953.1646031)  
 
 "
