@@ -22,7 +22,9 @@ removePathAccents: true
 
 enableGitInfo: false
 summaryLength: 30
-paginate: 200
+pagination:
+  pagerSize: 200
+#paginate: 200
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -34,7 +36,7 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  home: [HTML, RSS, JSON, WebAppManifest] #, headers] #, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
@@ -63,3 +65,35 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+
+module:  
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: assets
+          target: assets
+
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-core
+      mounts:
+        - source: layouts/_partials
+          target: layouts/partials
+        - source: layouts
+          target: layouts
+        - source: assets
+          target: assets
+        - source: data
+          target: data
+
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-seo
+      mounts:
+        - source: layouts/_partials
+          target: layouts/partials
+        - source: layouts
+          target: layouts
+        - source: assets
+          target: assets
+
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify

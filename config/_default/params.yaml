@@ -1,19 +1,12 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
-
 appearance:
-  theme_day: earth
-  #theme_night: dark
-  theme_night: mr_robot
+  theme_day: minimal
+  theme_night: minimal
   font: minimal
   font_size: M
 
-# SEO
 
+
+# SEO
 marketing:
   seo:
     site_type: Person
@@ -23,12 +16,9 @@ marketing:
     twitter: 'alansaid'
   analytics:
     google_analytics: 'UA-5445164-1'
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
   verification:
     google: ''
-    baidu: ''
+
 
 # Site header
 
@@ -41,6 +31,7 @@ header:
     show_day_night: true
     show_search: true
     highlight_active_link: true
+    show_theme_chooser: true
 
 # Site footer
 
@@ -49,7 +40,6 @@ footer:
     notice: '© {year} Alan Said.'
 
 # Localization
-
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '12:04'
@@ -93,9 +83,7 @@ features:
       show_logo: false
   map:
     provider: 'mapnik'
-    api_key: ''
     zoom: 15
-
 # Extensions
 
 extensions:
@@ -110,3 +98,10 @@ extensions:
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
+
+cms:
+  branch: master
+  local_backend: false
+icon:
+  pack:
+    ai: true

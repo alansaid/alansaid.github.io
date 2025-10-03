@@ -1,0 +1,18 @@
+@inproceedings{10.1145/3705328.3759321,
+author = {Berling, Hannah and Svahn, Robin and Said, Alan},
+title = {The Hidden Cost of Defaults in Recommender System Evaluation},
+year = {2025},
+isbn = {9798400713644},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3705328.3759321},
+doi = {10.1145/3705328.3759321},
+abstract = {Hyperparameter optimization is critical for improving the performance of recommender systems, yet its implementation is often treated as a neutral or secondary concern. In this work, we shift focus from model benchmarking to auditing the behavior of RecBole, a widely used recommendation framework. We show that RecBole’s internal defaults, particularly an undocumented early-stopping policy, can prematurely terminate Random Search and Bayesian Optimization. This limits search coverage in ways that are not visible to users. Using six models and two datasets, we compare search strategies and quantify both performance variance and search path instability. Our findings reveal that hidden framework logic can introduce variability comparable to the differences between search strategies. These results highlight the importance of treating frameworks as active components of experimental design and call for more transparent, reproducibility-aware tooling in recommender systems research. We provide actionable recommendations for researchers and developers to mitigate hidden configuration behaviors and improve the transparency of hyperparameter tuning workflows.},
+booktitle = {Proceedings of the Nineteenth ACM Conference on Recommender Systems},
+pages = {1311–1316},
+numpages = {6},
+keywords = {hyperparameter optimization, recommender systems, reproducibility, bayesian optimization, search strategies, framework auditing, configuration defaults, RecBole, benchmarking practices, software configuration},
+location = {
+},
+series = {RecSys '25}
+}

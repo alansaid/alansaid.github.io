@@ -28,6 +28,8 @@ design:
 
 
 ### Conference Organization
+- [UMAP 2026](https://www.um.org/umap2026/) - General Co-Chair
+- [TheWebConference 2026](https://www2026.thewebconf.org/) - User Modeling, Personalization, Recommendation Track Co-Chair
 - [UMAP 2024](https://www.um.org/umap2024/) - Research Methods and Reproducibility Track Co-Chair
 - [ACM RecSys 2023](https://recsys.acm.org/recsys23/) - Tutorial Co-Chair
 - [UMAP 2023](https://www.um.org/umap2023/) - Research Methods and Reproducibility Track Co-Chair
@@ -48,7 +50,7 @@ design:
 
 
 ### Steering Committees
-- [ACM RecSys](https://recsys.acm.org/steering-committee/) 2023-2026 - Steering Committee Chair
+- [ACM RecSys](https://recsys.acm.org/steering-committee/) 2023-2026, 2026-2029 - Steering Committee Chair
 - [ACM RecSys](https://recsys.acm.org/steering-committee/) 2020-2023 - Executive Committee
 - [ACM RecSys](https://recsys.acm.org/steering-committee/) 2015-present - Steering Committee
 

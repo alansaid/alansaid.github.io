@@ -19,6 +19,7 @@ date_format: Jan 2006
 design:
   columns: '2'
 ---
+- [BEYOND 2025](https://beyondrecsys.github.io/2025/)@ACM RecSys: Workshop on Beyond Algorithms: Reclaiming the Interdisciplinary Roots of Recommender Systems
 - [NPD 2024](https://personalizationday.github.io/2024/): Nordic Personalization Days
 - [INTROSPECTIVES 2024](https://introspectives.github.io/2024/)@ACM RecSys: Workshop on Reflections on Recommender Systems: Past, Present, and Future
 - [AltRecSys 2024](https://altrecsys.github.io/)@ACM RecSys: Workshop on Alternative, Unexpected, and Critical Ideas in Recommendation
