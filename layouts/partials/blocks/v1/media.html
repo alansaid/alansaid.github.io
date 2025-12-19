@@ -1,0 +1,62 @@
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.Params.title }}
+{{ $subtitle := $block.Params.subtitle }}
+
+  <div class="row">
+      <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+     {{ with $title }}
+      <h1 class="mb-0">{{ . | markdownify }}</h1>
+    {{ end }} 
+     {{ with $subtitle }}
+      <p class="mt-1">{{ . | markdownify }}</p>
+    {{ end }} 
+    </div>
+      
+    <div class="article-container">
+                <div class="row">
+
+
+    {{ with $block.Content }}
+      <div class="mt-1">{{ . }}</div>
+    {{ end }}
+    
+{{ $url := "assets/csv/press.csv" }}
+{{ $content := readFile $url }}
+    {{ $options := dict "delimiter" "," }}
+    {{ $rows := $content | transform.Unmarshal $options }}
+    {{ range $i, $r :=  $rows }} <!-- (dict "mediaarticles" (slice "author" "date" "outlet" "title" "language" "link")) -->
+        {{ if ne $i 0 }} <!-- Skip the first row -->
+
+         <div class="press-item mt-1">
+
+      <p class="mt-1 press-text">
+        {{ index $r 1 }}.                                      <!-- outlet -->
+        {{ if index $r 0 }}{{ index $r 0 }}, {{ end }}       <!-- date -->
+        
+        {{ if index $r 4 }}<a href="{{ index $r 5 }}" target="_blank">{{ end }}
+        {{ index $r 2 }}                                       <!-- title -->
+        {{ if index $r 4 }}</a>{{ end }}
+        (in {{ index $r 3 }}).                                <!-- language -->
+
+        {{ if index $r 5 }}
+          {{ if eq (index $r 5) "text" }}<i class="fa-brands fa-readme"></i>{{ end }}
+          {{ if eq (index $r 5) "audio" }}<i class="fa-solid fa-ear-listen"></i>{{ end }}
+          {{ if eq (index $r 5) "video" }}<i class="fa-solid fa-video"></i>{{ end }}
+        {{ end }}
+      </p>
+
+      {{ with index $r 7 }} <!-- pic column -->
+        <div class="press-hover-image">
+          <img src="{{ . }}" alt="Preview for {{ index $r 2 }}">
+        </div>
+      {{ end }}
+
+    </div>
+        {{ end }}
+    {{ end }}
+
+    </div>
+  </div>
+</div>

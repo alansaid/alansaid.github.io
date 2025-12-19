@@ -1,0 +1,62 @@
+/* Container for each press entry */
+.press-item {
+  position: relative;
+  padding: 0.35rem 0;
+}
+
+/* Make the text block behave nicely with the overlay */
+.press-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Hover card with image */
+.press-hover-image {
+  position: absolute;
+
+  /* position it just under the text, left-aligned */
+  top: 100%;
+  left: 0;
+  margin-top: 0.75rem;
+
+  transform: translateY(4px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+
+  /* Card look that fits the dark theme */
+  background: rgba(15, 23, 42, 0.98);        /* near slate-900 */
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  padding: 0.5rem;
+
+  max-width: unquote("min(320px, 45vw)");
+  z-index: 40;
+  transition:
+    opacity 0.18s ease-out,
+    transform 0.18s ease-out,
+    box-shadow 0.18s ease-out;
+}
+
+/* Show on hover */
+.press-item:hover .press-hover-image {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.7);
+}
+
+/* Show on hover */
+.press-item:hover .press-hover-image {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+  pointer-events: auto;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.7);
+}
+
+/* Don’t show the overlay on small screens – it gets awkward */
+@media (max-width: 768px) {
+  .press-hover-image {
+    display: none;
+  }
+}
