@@ -7,7 +7,6 @@ event_url: https://www.famnit.upr.si/en/news/dr-alan-said-unive
 
 location: University of Primorska
 address:
-  street: 
   city: Koper
   country: Slovenia
 

@@ -15,5 +15,8 @@ header:
 ---
 An incomplete list of some of the talks, academic and otherwise, I've given in the past.
 <br />
+See my [ACM Distinguished Speakers profile](https://speakers.acm.org/speakers/said_21322) for available talks and speaking requests.
+
+
 <br />
 <br />
