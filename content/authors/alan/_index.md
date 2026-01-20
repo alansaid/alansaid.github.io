@@ -102,5 +102,5 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Alan Said is associate professor at University of Gothenburg. His research spans the fields of user modeling, personalization, recommender systems, evaluation, and reproducibility. He is Head of education at the Department of Applied IT.
+Alan Said is associate professor at University of Gothenburg. His research spans the fields of user modeling, personalization, recommender systems, evaluation, and reproducibility.
 {style="text-align: justify;"}
