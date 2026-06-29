@@ -14,7 +14,7 @@ last_name: Said
 superuser: true
 
 # Role/position/tagline
-role: Associate Professor of Computer Science
+role: Professor of Computer Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
