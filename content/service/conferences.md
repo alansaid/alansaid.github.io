@@ -51,6 +51,7 @@ design:
 
 ### Steering Committees
 - [ACM RecSys](https://recsys.acm.org/steering-committee/) 2023-2026, 2026-2029 - Steering Committee Chair
+- [ACM UMAP](https://www.um.org/) 2026-present - Steering Committee
 - [ACM RecSys](https://recsys.acm.org/steering-committee/) 2020-2023 - Executive Committee
 - [ACM RecSys](https://recsys.acm.org/steering-committee/) 2015-present - Steering Committee
 

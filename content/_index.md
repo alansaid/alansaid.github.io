@@ -20,7 +20,7 @@ sections:
       phone: +46 766-18 20 26
       #appointment_url: 'https://calendly.com'
       address:
-        street: Forskningsgången 6
+        street: Medicinaregatan 7b
         city: Gothenburg
         postcode: '41756'
         country: Sweden
@@ -29,7 +29,7 @@ sections:
         - icon: map-location-dot
           icon_pack: fa
           name: 'Visiting address'
-          link: 'https://maps.app.goo.gl/DZB87JQUWRvBWGqF7'
+          link: 'https://maps.app.goo.gl/P1Li9jNZUKZCoJqT8'
       # Automatically link email and phone or display as text?
       autolink: true
     design:
