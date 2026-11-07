@@ -5,13 +5,21 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: about.avatar
+  - block: about.biography
     id: about
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: alan
-      # Override your bio text from `authors/admin/_index.md`?
-      text:
+      title: What makes a good recommender system?
+      subtitle: Recommender systems and personalization
+      primary_social: [envelope, google-scholar, github, linkedin]
+      links:
+        - name: Research
+          url: /research/
+        - name: Publications
+          url: /publications/
+        - name: Talks
+          url: /talks/
   - block: contact
     id: contact
     content:

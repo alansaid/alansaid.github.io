@@ -1,3 +1,278 @@
+/* Research introduction: keep profile and reading styles local to the homepage. */
+#about.wg-about-biography {
+  .research-intro {
+    align-items: flex-start;
+  }
+
+  #profile {
+    padding: 0 1rem;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .portrait-title h2 {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .profile-role,
+  .profile-affiliation {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0 0 0.35rem;
+  }
+
+  .network-icon {
+    gap: 0.25rem;
+    margin: 0.6rem 0 0;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+    }
+  }
+
+  .profile-more {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+
+    summary {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    .network-icon {
+      margin-top: 0.25rem;
+    }
+  }
+
+  .research-statement {
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .research-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.85rem;
+  }
+
+  .research-statement h1 {
+    font-size: clamp(1.65rem, 2.8vw, 2.1rem);
+    line-height: 1.25;
+    font-weight: 400;
+    max-width: 25ch;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+  }
+
+  .article-style {
+    max-width: 62ch;
+    line-height: 1.65;
+
+    p {
+      margin-bottom: 1.15rem;
+    }
+  }
+
+  .research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin-top: 1.3rem;
+    font-size: 0.9rem;
+
+    a {
+      padding: 0.4rem 0;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .research-statement {
+      max-width: 680px;
+      margin: 2rem auto 0;
+      padding-left: 15px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+
+    .portrait-title h2 {
+      margin-top: 0.85rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #profile {
+      display: grid;
+      grid-template-columns: 80px minmax(0, 1fr);
+      gap: 0.35rem 1rem;
+      padding: 0;
+      text-align: left;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      grid-row: 1 / 4;
+    }
+
+    .portrait-title h2 {
+      margin-top: 0;
+    }
+
+    .network-icon,
+    .profile-more {
+      grid-column: 2;
+      margin-top: 0;
+    }
+
+    .network-icon {
+      justify-content: flex-start;
+      gap: 0;
+    }
+
+    .profile-more summary {
+      margin-left: 0;
+    }
+  }
+}
+
+/* Research page: a reading column with quiet, grouped publication panels. */
+#research-page {
+  .research-container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  .research-page-header h1 {
+    margin: 0 0 1.5rem;
+  }
+
+  .research-content {
+    line-height: 1.7;
+
+    > p {
+      max-width: 68ch;
+    }
+
+    > h2 {
+      margin: 2.5rem 0 0.8rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(127, 127, 127, 0.22);
+      scroll-margin-top: 90px;
+    }
+  }
+
+  .research-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin: 1.75rem 0 2rem;
+    font-size: 0.85rem;
+
+    a {
+      padding: 0.35rem 0;
+    }
+  }
+
+  .research-papers {
+    margin: 1.25rem 0 1.75rem;
+    padding: 1rem 1.25rem;
+    background: rgba(127, 127, 127, 0.06);
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    border-radius: 6px;
+
+    > h3 {
+      margin: 0 0 0.65rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+
+  .research-paper {
+    padding: 0.8rem 0;
+
+    + .research-paper {
+      border-top: 1px solid rgba(127, 127, 127, 0.2);
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    h4 {
+      margin: 0 0 0.2rem;
+      font-family: inherit;
+      font-size: 1rem;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    .research-paper-meta {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      opacity: 0.82;
+      margin: 0;
+    }
+
+    abbr {
+      text-decoration: none;
+    }
+
+    .research-paper-description {
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .research-container {
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .research-content > h2 {
+      margin-top: 2rem;
+    }
+
+    .research-topics {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .research-papers {
+      padding: 1rem;
+    }
+  }
+}
+
 /* Container for each press entry */
 .press-item {
   position: relative;

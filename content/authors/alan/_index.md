@@ -22,13 +22,14 @@ organizations:
     url: https://www.gu.se/
 
 # Short bio (displayed in user profile at end of posts)
-#bio: 
+bio: 'Research on recommender systems and personalization, connecting evaluation and reproducibility with human experience and sustainability.'
 
 # Interests to show in About widget
 interests:
-  - Recommender Systems
-  - Fairness
-  - Intelligent Information Systems
+  - Recommender Systems and Personalization
+  - Evaluation and Reproducibility
+  - Preferences, Interaction and Trust
+  - Sustainability and Responsibility
 
 # Education to show in About widget
 education:
@@ -102,5 +103,8 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Alan Said is professor at University of Gothenburg. His research spans the fields of user modeling, personalization, recommender systems, evaluation, and reproducibility.
-{style="text-align: justify;"}
+I study recommender systems and personalization: how we evaluate them, how people experience them, and their consequences for society and the environment.
+
+My research connects evaluation and reproducibility with questions about human preferences, interaction and trust. I examine how experimental choices shape our conclusions, and how those conclusions relate to what people need from recommendation systems.
+
+I investigate fairness, accountability and the environmental costs of personalization. These questions inform how we design systems, what we measure, and what we count as progress.

@@ -12,7 +12,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Alan Said is professor at University of Gothenburg. His research spans the fields of user modeling, personalization, recommender systems, evaluation, and reproducibility.'
+    description: 'Alan Said studies recommender systems and personalization, connecting evaluation and reproducibility with human experience, fairness and sustainability.'
     twitter: 'alansaid'
   analytics:
     google_analytics: 'UA-5445164-1'

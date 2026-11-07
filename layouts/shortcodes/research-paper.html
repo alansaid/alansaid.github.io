@@ -1,0 +1,18 @@
+{{ $ref := .Get "ref" }}
+{{ $paper := site.GetPage (printf "/publications/%s" $ref) }}
+{{ if not $paper }}
+  {{ errorf "Research contribution references a missing publication: %s" $ref }}
+{{ end }}
+{{ $authors := slice }}
+{{ range $paper.Params.authors }}
+  {{ $name := . }}
+  {{ with site.GetPage (printf "/authors/%s" .) }}{{ $name = .Title }}{{ end }}
+  {{ $authors = $authors | append $name }}
+{{ end }}
+{{ $full_venue := $paper.Params.publication | markdownify | plainify }}
+{{ $venue := .Get "venue" | default $paper.Params.publication_short | default $full_venue }}
+<article class="research-paper">
+  <h4><a href="{{ $paper.RelPermalink }}">{{ $paper.Title }}</a></h4>
+  <p class="research-paper-meta">{{ delimit $authors ", " }} &middot; <abbr title="{{ $full_venue }}">{{ $venue }}</abbr> &middot; <time datetime="{{ $paper.Date.Format "2006" }}">{{ $paper.Date.Year }}</time></p>
+  <div class="research-paper-description">{{ .Inner | markdownify }}</div>
+</article>
