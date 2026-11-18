@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article id="service-page" class="article editorial-page">
+  <div class="editorial-container">
+    <header><h1>{{ .Title }}</h1></header>
+    <div class="article-style editorial-content">
+      {{ .Content }}
+      {{ range sort (.Resources.ByType "page") "Weight" }}
+      <section aria-labelledby="{{ .Title | anchorize }}">
+        <h2 id="{{ .Title | anchorize }}">{{ .Title }}</h2>
+        {{ .Content }}
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article id="talks-page" class="article editorial-page">
+  <div class="editorial-container">
+    <header><h1>{{ .Title }}</h1></header>
+    <div class="article-style editorial-content">
+      {{ .Content }}
+      <nav class="speaking-links" aria-label="Speaking information">
+        <a href="{{ "/#contact" | relLangURL }}">Speaking enquiries</a>
+        <a href="https://speakers.acm.org/speakers/said_21322">ACM Distinguished Speakers profile</a>
+        {{ with site.GetPage "/bio" }}<a href="{{ .RelPermalink }}">Bio &amp; photo</a>{{ end }}
+      </nav>
+      <section aria-labelledby="selected-talks">
+        <h2 id="selected-talks">Selected talks</h2>
+        <div class="selected-talks">
+          {{ range .Params.selected_talks }}
+            {{ $selection := . }}
+            {{ with site.GetPage .ref }}
+            <article class="talk-entry selected-talk">
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p class="talk-description">{{ $selection.description }}</p>
+              {{ partial "talk-context.html" . }}
+              {{ partial "talk-materials.html" . }}
+            </article>
+            {{ else }}{{ errorf "Selected talk references missing page: %s" .ref }}{{ end }}
+          {{ end }}
+        </div>
+      </section>
+      <section aria-labelledby="talk-archive">
+        <h2 id="talk-archive">Talk archive</h2>
+        {{ range .RegularPages.GroupByDate "2006" "desc" }}
+        <section class="talk-year" aria-labelledby="talks-{{ .Key }}">
+          <h3 id="talks-{{ .Key }}">{{ .Key }}</h3>
+          <ul class="talk-entries">
+            {{ range .Pages.ByDate.Reverse }}
+            <li class="talk-entry">
+              <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+              {{ partial "talk-context.html" . }}
+              {{ partial "talk-materials.html" . }}
+            </li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+      </section>
+    </div>
+  </div>
+</article>
+{{ end }}

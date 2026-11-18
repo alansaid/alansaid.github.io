@@ -30,7 +30,7 @@ publication_types:
 publication: 'Proceedings of the Nineteenth ACM Conference on Recommender Systems *RecSys*'
 publication_short: ''
 
-doi: ''
+doi: '10.1145/3705328.3759321'
 
 abstract: "Hyperparameter optimization is critical for improving the performance of recommender systems, yet its implementation is often treated as a neutral or secondary concern. In this work, we shift focus from model benchmarking to auditing the behavior of RecBole, a widely used recommendation framework. We show that RecBole’s internal defaults, particularly an undocumented early-stopping policy, can prematurely terminate Random Search and Bayesian Optimization. This limits search coverage in ways that are not visible to users. Using six models and two datasets, we compare search strategies and quantify both performance variance and search path instability. Our findings reveal that hidden framework logic can introduce variability comparable to the differences between search strategies. These results highlight the importance of treating frameworks as active components of experimental design and call for more transparent, reproducibility-aware tooling in recommender systems research. We provide actionable recommendations for researchers and developers to mitigate hidden configuration behaviors and improve the transparency of hyperparameter tuning workflows."
 
@@ -58,15 +58,6 @@ links:
   icon_pack: ai
   name: preprint
   url: https://arxiv.org/abs/2508.21180
-- icon: 'open-access'
-  icon_pack: ai
-  name: ACM
-  url: https://dl.acm.org/doi/full/10.1145/3705328.3759321
-- icon: doi
-  name: DOI
-  icon_pack: ai
-  url: https://doi.org/10.1145/3705328.3759321
-
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.

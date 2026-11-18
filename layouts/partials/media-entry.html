@@ -1,0 +1,5 @@
+<li class="media-entry">
+  <a href="{{ .link }}">{{ .title }}</a>
+  <p class="entry-meta">{{ .outlet }} · {{ .date }} · {{ .language }}{{ if eq .icon "audio" }} · Audio{{ else if eq .icon "video" }} · Video{{ end }}</p>
+  {{ with .comment }}<p class="entry-meta">{{ . }}</p>{{ end }}
+</li>

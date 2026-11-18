@@ -28,7 +28,7 @@ publication_types:
 publication: '*Front. Big Data 7:1505284*'
 publication_short: ''
 
-doi: ''
+doi: '10.3389/fdata.2024.1505284'
 
 abstract: "The rise of Large Language Models (LLMs), such as LLaMA and ChatGPT, has opened new opportunities for enhancing recommender systems through improved explainability. This paper provides a systematic literature review focused on leveraging LLMs to generate explanations for recommendations—a critical aspect for fostering transparency and user trust. We conducted a comprehensive search within the ACM Guide to Computing Literature, covering publications from the launch of ChatGPT (November 2022) to the present (November 2024). Our search yielded 232 articles, but after applying inclusion criteria, only six were identified as directly addressing the use of LLMs in explaining recommendations. This scarcity highlights that, despite the rise of LLMs, their application in explainable recommender systems is still in an early stage. We analyze these select studies to understand current methodologies, identify challenges, and suggest directions for future research. Our findings underscore the potential of LLMs improving explanations of recommender systems and encourage the development of more transparent and user-centric recommendation explanation solutions.
 "
@@ -61,11 +61,6 @@ links:
   icon_pack: ai
   name: Frontiers
   url: https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1505284/full
-- icon: doi
-  name: DOI
-  icon_pack: ai
-  url: https://doi.org/10.3389/fdata.2024.1505284
-
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.

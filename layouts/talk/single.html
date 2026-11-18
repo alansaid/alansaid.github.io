@@ -1,76 +1,39 @@
-{{- define "main" -}}
-
-<div class="pub">
-
-  {{ partial "page_header.html" . }}
-
-  <div class="article-container">
-
-    {{ if .Params.abstract }}
-      <h3>{{ i18n "abstract" }}</h3>
-      <p class="pub-abstract">{{ .Params.abstract | markdownify | emojify }}</p>
-    {{ else }}
-      <br>
-    {{ end }}
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "date" }}</div>
-          <div class="col-12 col-md-9">
-            {{ partial "functions/get_event_dates" . }}
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
+{{ define "main" }}
+<article id="talk-page" class="article editorial-page">
+  <div class="editorial-container">
+    <header><h1>{{ .Title }}</h1></header>
+    {{ $featured := partial "blox-core/functions/get_featured_image.html" . }}
+    {{ $show_image := and $featured (not .Params.image.preview_only) }}
+    <div class="talk-overview{{ if $show_image }} has-featured-image{{ end }}">
+    <div>
+    <dl class="talk-details">
+      {{ with .Params.event }}<div><dt>Event</dt><dd>{{ with $.Params.event_url }}<a href="{{ . }}">{{ end }}{{ . }}{{ if $.Params.event_url }}</a>{{ end }}</dd></div>{{ end }}
+      <div><dt>Date</dt><dd>{{ partial "functions/get_event_dates" . }}</dd></div>
+      {{ with .Params.location }}<div><dt>Location</dt><dd>{{ . }}{{ with $.Params.address.country }} · {{ . }}{{ end }}</dd></div>{{ end }}
+    </dl>
+    {{ partial "talk-materials.html" . }}
     </div>
-    <div class="d-md-none space-below"></div>
-
-    {{ if .Params.event }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "event" }}</div>
-          <div class="col-12 col-md-9">
-            {{ with .Params.event_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-            {{ .Params.event | markdownify }}
-            {{ if .Params.event_url }}</a>{{ end }}
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
+    {{ if $show_image }}
+      {{ $preview := $featured.Fit "640x520" }}
+      <figure class="talk-featured-image">
+        <a href="{{ $featured.RelPermalink }}" aria-label="View full-size image for {{ .Title }}">
+          <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" alt="{{ .Params.image.alt_text | default .Params.image.caption | default .Title | plainify }}">
+        </a>
+        {{ with .Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+      </figure>
     {{ end }}
-
-    {{ if .Params.location }}
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">{{ i18n "location" }}</div>
-          <div class="col-12 col-md-9">{{ .Params.location | markdownify }}</div>
-          {{ if .Params.address }}
-            <div class="col-md-3"></div>
-            <div class="col-12 col-md-9">{{.Params.address.city}}, {{.Params.address.country}}  <!--{{partial "functions/get_address" (dict "root" . "address" .Params.address) }}--></div>
-          {{end}}
-        </div>
-      </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-    {{ end }}
-
-    <div class="space-below"></div>
-
-    <div class="article-style">
+    <div class="article-style editorial-content">
+      {{ with .Params.abstract }}
+      <section aria-labelledby="about-this-talk"><h2 id="about-this-talk">About this talk</h2><div class="talk-abstract">{{ . | markdownify | emojify }}</div></section>
+      {{ end }}
       {{ .Content }}
     </div>
-
-    {{ partial "page_footer" . }}
-
+    <nav class="speaking-links" aria-label="More speaking information">
+      {{ with site.GetPage "/talks" }}<a href="{{ .RelPermalink }}">All talks</a>{{ end }}
+      <a href="{{ "/#contact" | relLangURL }}">Speaking enquiries</a>
+      {{ with site.GetPage "/bio" }}<a href="{{ .RelPermalink }}">Bio &amp; photo</a>{{ end }}
+    </nav>
   </div>
-</div>
-{{- end -}}
+</article>
+{{ end }}

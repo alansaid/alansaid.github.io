@@ -1,0 +1,13 @@
+{{ $page := . }}
+{{ if or .Params.url_slides .Params.url_video }}
+<nav class="talk-materials" aria-label="Materials for {{ .Title }}">
+  {{ range slice (dict "url" .Params.url_slides "label" "Slides") (dict "url" .Params.url_video "label" "Recording") }}
+    {{ $material := . }}
+    {{ with .url }}
+      {{ $url := . }}
+      {{ with $page.Resources.GetMatch . }}{{ $url = .RelPermalink }}{{ else }}{{ if not (urls.Parse $url).Scheme }}{{ $url = $url | relLangURL }}{{ end }}{{ end }}
+      <a href="{{ $url }}">{{ $material.label }}</a>
+    {{ end }}
+  {{ end }}
+</nav>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ $block := .wcBlock }}
+<div class="row recent-updates">
+  <div class="col-12 col-lg-4 section-heading"><h2>{{ $block.content.title }}</h2></div>
+  <div class="col-12 col-lg-8">
+    <ul class="updates-list">
+      {{ range $block.content.items }}
+        {{ $item := . }}
+        {{ with site.GetPage .ref }}
+          <li><time datetime="{{ $item.date }}">{{ time.Format "Jan 2006" $item.date }}</time><div><span class="update-kind">{{ $item.prefix }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></div></li>
+        {{ else }}{{ errorf "Recent update references missing page: %s" .ref }}{{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>

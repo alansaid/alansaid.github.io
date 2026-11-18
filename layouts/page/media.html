@@ -1,0 +1,60 @@
+{{ define "main" }}
+{{ $rows := resources.Get "csv/press.csv" | transform.Unmarshal (dict "delimiter" ",") }}
+{{ $research := slice }}{{ $opinion := slice }}{{ $commentary := slice }}{{ $publishing := slice }}
+{{ range $i, $r := $rows }}
+  {{ if gt $i 0 }}
+    {{ $entry := dict "date" (index $r 0) "outlet" (index $r 1) "title" (index $r 2) "language" (index $r 3) "link" (index $r 4) "icon" (index $r 5) "comment" (index $r 6) "selected" (index $r 13) }}
+    {{ if eq (index $r 12) "research" }}{{ $research = $research | append $entry }}
+    {{ else if eq (index $r 12) "opinion" }}{{ $opinion = $opinion | append $entry }}
+    {{ else if eq (index $r 12) "publishing" }}{{ $publishing = $publishing | append $entry }}
+    {{ else }}{{ $commentary = $commentary | append $entry }}{{ end }}
+  {{ end }}
+{{ end }}
+<article id="media-page" class="article editorial-page">
+  <div class="editorial-container">
+    <header><h1>{{ .Title }}</h1></header>
+    <div class="article-style editorial-content">
+      {{ .Content }}
+      {{ with $publishing }}
+      <section aria-labelledby="academic-publishing">
+        <h2 id="academic-publishing">Academic publishing and AI</h2>
+        <div class="media-story">
+          <h3>Misuse of academic identities</h3>
+          <p>Coverage of AI-generated papers falsely attributed to academics, including me.</p>
+          <ul class="media-entries">{{ range where . "selected" "true" }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+          {{ $more := where . "selected" "ne" "true" }}
+          {{ with $more }}
+          <details class="content-archive">
+            <summary>More coverage ({{ len . }} entries)</summary>
+            <ul class="media-entries archive-content">{{ range . }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+          </details>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+      <section aria-labelledby="research-coverage">
+        <h2 id="research-coverage">Research in the media</h2>
+        <div class="media-story">
+          <h3>How musical preferences change with age</h3>
+          <p>Our study of music listening across ages received coverage in Sweden and internationally.</p>
+          {{ with site.GetPage "/publications/2025-golubovikj-soundtracks" }}<p class="story-paper"><a href="{{ .RelPermalink }}">Read the study: <em>{{ .Title }}</em> →</a></p>{{ end }}
+          <ul class="media-entries">{{ range where $research "selected" "true" }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+          <details class="content-archive">
+            <summary>More coverage ({{ len (where $research "selected" "ne" "true") }} entries)</summary>
+            <ul class="media-entries archive-content">{{ range where $research "selected" "ne" "true" }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+          </details>
+        </div>
+      </section>
+      <section aria-labelledby="opinion">
+        <h2 id="opinion">Opinion articles</h2>
+        <p>Articles I have authored or co-authored.</p>
+        <ul class="media-entries">{{ range $opinion }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+      </section>
+      <section aria-labelledby="commentary">
+        <h2 id="commentary">Expert commentary</h2>
+        <ul class="media-entries">{{ range $commentary }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+      </section>
+    </div>
+  </div>
+</article>
+{{ end }}

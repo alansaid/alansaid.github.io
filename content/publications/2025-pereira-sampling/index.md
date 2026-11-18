@@ -30,7 +30,7 @@ publication_types:
 publication: 'Proceedings of the Nineteenth ACM Conference on Recommender Systems *RecSys*'
 publication_short: ''
 
-doi: ''
+doi: '10.1145/3705328.3748086'
 
 abstract: "Offline evaluation plays a central role in benchmarking recommender systems when online testing is impractical or risky. However, it is susceptible to two key sources of bias: exposure bias, where users only interact with items they are shown, and sampling bias, introduced when evaluation is performed on a subset of logged items rather than the full catalog. While prior work has proposed methods to mitigate sampling bias, these are typically assessed on fixed logged datasets rather than for their ability to support reliable model comparisons under varying exposure conditions or relative to true user preferences. In this paper, we investigate how different combinations of logging and sampling choices affect the reliability of offline evaluation. Using a fully observed dataset as ground truth, we systematically simulate diverse exposure biases and assess the reliability of common sampling strategies along four dimensions: sampling resolution (recommender model separability), fidelity (agreement with full evaluation), robustness (stability under exposure bias), and predictive power (alignment with ground truth). Our findings highlight when and how sampling distorts evaluation outcomes and offer practical guidance for selecting strategies that yield faithful and robust offline comparisons."
 
@@ -58,15 +58,6 @@ links:
   icon_pack: ai
   name: preprint
   url: https://arxiv.org/abs/2508.05398
-- icon: 'open-access'
-  icon_pack: ai
-  name: ACM
-  url: https://dl.acm.org/doi/full/10.1145/3705328.3748086
-- icon: doi
-  name: DOI
-  icon_pack: ai
-  url: https://doi.org/10.1145/3705328.3748086
-
 
 # Publication image
 # Add an image named `featured.jpg/png` to your page's folder then add a caption below.

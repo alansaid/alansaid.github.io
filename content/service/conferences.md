@@ -1,33 +1,23 @@
 ---
-summary: "This page lists my pc-chairing activities."  # Add a page description.
-
-# An instance of the Accomplishments widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
-widget: experience
-
-# This file represents a page section.
+title: "Leadership and conferences"
 headless: true
-
-# Order that this section appears on the page.
-weight: 15
-
-# Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: Conferences #PC Co-Chair #'Service to the Community'
-#subtitle: PC Co-Chair
-
-# Date format
-#   Refer to https://wowchemy.com/docs/customization/#date-format
-date_format: Jan 2006
-
-
-
-
-design:
-  columns: '2' 
+weight: 10
 ---
 
+### Steering committees
 
-### Conference Organization
+- **[ACM RecSys Steering Committee](https://recsys.acm.org/steering-committee/) — Chair**, 2023–2026; re-elected 2026–2029.
+- **[ACM UMAP Steering Committee](https://www.um.org/) — Member**, since 2026.
+
+### Selected conference roles
+
+- **[UMAP 2026](https://www.um.org/umap2026/)** — General Co-Chair.
+- **[The Web Conference 2026](https://www2026.thewebconf.org/)** — User Modeling, Personalization and Recommendation Track Co-Chair.
+- **ACM RecSys 2020 and 2021** — Reproducibility Co-Chair.
+- **[ACM RecSys 2019](https://recsys.acm.org/recsys19/)** — General Co-Chair.
+
+{{< archive title="Conference and committee history" >}}
+
 - [UMAP 2026](https://www.um.org/umap2026/) - General Co-Chair
 - [TheWebConference 2026](https://www2026.thewebconf.org/) - User Modeling, Personalization, Recommendation Track Co-Chair
 - [UMAP 2024](https://www.um.org/umap2024/) - Research Methods and Reproducibility Track Co-Chair
@@ -48,13 +38,14 @@ design:
 - [ACM RecSys 2014](https://recsys.acm.org/recsys14/) - Publicity Co-Chair
 - [ACM RecSys 2012](https://recsys.acm.org/recsys12/) - Publicity Co-Chair
 
+### Earlier committee roles
 
-### Steering Committees
-- [ACM RecSys](https://recsys.acm.org/steering-committee/) 2023-2026, 2026-2029 - Steering Committee Chair
-- [ACM UMAP](https://www.um.org/) 2026-present - Steering Committee
-- [ACM RecSys](https://recsys.acm.org/steering-committee/) 2020-2023 - Executive Committee
-- [ACM RecSys](https://recsys.acm.org/steering-committee/) 2015-present - Steering Committee
+- ACM RecSys Steering Committee member, since 2015.
+- ACM RecSys Executive Committee, 2020–2023.
 
-### Other Events
+### Summer schools
+
 - [2023 RecSys Summer School](https://acmrecsys.github.io/rsss2023/) - Co-Organizer
 - [2019 RecSys Summer School](https://acmrecsys.github.io/rsss2019/) - Co-Organizer
+
+{{< /archive >}}

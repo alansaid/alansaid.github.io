@@ -22,3 +22,5 @@ header:
   caption: ""
   image: ""
 ---
+
+For selected contributions and how they connect, see my [research overview]({{< relref "/research" >}}).

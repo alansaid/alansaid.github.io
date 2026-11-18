@@ -1,16 +1,14 @@
 ---
-title: "Community Service"  # Add a page title.
-summary: "This page lists my activities in the international scientific community as well as management activities."  # Add a page description.
-date: "2021-11-06T00:00:00Z"
-type: "widget_page"  # Page type is a Widget Page #page
-# Homepage is headless, other widget pages are not.
-headless: false
-
+title: Community service
+summary: 'Leadership, editorial work, research meetings and peer review in recommender systems and personalization.'
+type: page
+layout: service
 draft: false
-
-reading_time: false  # Show estimated reading time?
-share: false  # Show social sharing links?
-profile: false  # Show author profile?
-commentable: false  # Allow visitors to comment? Supported by the Page, Post, and Docs content types.
-editable: false  # Allow visitors to edit the page? Supported by the Page, Post, and Docs content types.
+reading_time: false
+share: false
+profile: false
+commentable: false
+editable: false
 ---
+
+My community work focuses on recommender systems and personalization, including conference leadership, reproducibility initiatives and forums for discussing the field's methods and wider responsibilities.

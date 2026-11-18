@@ -20,6 +20,23 @@ sections:
           url: /publications/
         - name: Talks
           url: /talks/
+  - block: recent-updates
+    id: updates
+    content:
+      title: Recent updates
+      items:
+        - date: '2026-11-03'
+          prefix: Talk
+          ref: /talks/2026-11-03-gu-ai-for-science
+        - date: '2026-09-15'
+          prefix: Paper
+          ref: /publications/2026-said-reproducibility
+        - date: '2026-08-17'
+          prefix: Paper
+          ref: /publications/2026-silva-perceptions
+    design:
+      spacing:
+        padding: ['2rem', '0', '2rem', '0']
   - block: contact
     id: contact
     content:

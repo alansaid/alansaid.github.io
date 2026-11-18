@@ -1,0 +1,4 @@
+<details class="content-archive">
+  <summary>{{ .Get "title" }}</summary>
+  <div class="archive-content">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</details>

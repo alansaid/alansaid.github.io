@@ -1,8 +1,12 @@
 ---
 # Display name
-title: Bio
+title: Bio & photo
 type: 'page'
+layout: bio
+summary: 'A biography and downloadable portrait for event organisers and media.'
 headless: false
+image:
+  preview_only: true
 
 draft: false
 
@@ -13,14 +17,9 @@ commentable: false  # Allow visitors to comment? Supported by the Page, Post, an
 editable: false  # Allow visitors to edit the page? Supported by the Page, Post, and Docs content types.
 
 ---
-Alan Said holds the position of Professor at the University of Gothenburg, where his research is centered on recommender systems. This area combines elements from various disciplines including data science, psychology, human-computer interaction, information science, and cognitive science. Alan's work aims to understand and utilize the relationships between different stakeholder perspectives in recommender systems to improve recommendation and personalization systems. His research contributions have been recognized through publications in journals and conferences such as RecSys, UMUAI, CSCW, TORS, IUI, SIGIR, and TIST.
 
+Alan Said is a Professor of Computer Science at the University of Gothenburg, Sweden. His research focuses on recommender systems and personalization: how they are evaluated, how people experience them, and their consequences for society and the environment. His work connects evaluation and reproducibility with questions about human preferences, trust, fairness and sustainability.
 
-Alan earned his PhD from Technische Universität Berlin and has since held a variety of positions in both academic and industry settings. He served as a lecturer at the University of Skövde from 2016 to 2019. In the industry, he worked as a machine learning engineer at Recorded Future from 2014 to 2016. At Delft University of Technology, he was a Senior Researcher in the Multimedia Computing research group in 2014, focusing on recommender systems and their evaluation. He also received the prestigious Marie Curie Actions Alain Bensoussan ERCIM Fellowship at Centrum Wiskunde & Informatica from 2013 to 2014 for his work on evaluating recommender and personalization systems.
+He chairs the ACM RecSys Steering Committee and has served as General Co-Chair of ACM RecSys and ACM UMAP. His research has appeared in venues including ACM RecSys, SIGIR, CSCW and ACM Transactions on Recommender Systems.
 
-Alan Said's work has explored areas such as user modeling, personalization, recommender systems, evaluation, and reproducibility. His research has received multiple awards at scientific conferences and workshop. Alan regularly serves on program and organization committees for conferences and journals, including ACM RecSys, WWW, ACM CIKM, ACM UMAP, ACM IUI, UMUAI, TWeb, and TKDD. Presently, he holds the position of Chair for the ACM RecSys Steering Committee (2023-2026, re-elected 2026-2029).
-
-
-
-
-{style="text-align: justify;"}
+Alan holds a PhD from Technische Universität Berlin. His background spans academia and industry, including positions at Centrum Wiskunde & Informatica, Delft University of Technology and the University of Skövde, and work as a machine learning engineer at Recorded Future.

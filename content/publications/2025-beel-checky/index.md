@@ -33,7 +33,7 @@ publication_types:
 publication: 'Advances in Information Retrieval: 47th European Conference on Information Retrieval, *ECIR 2025*'
 publication_short: ''
 
-doi: ''
+doi: '10.1007/978-3-031-88720-8_6'
 
 abstract: "Submission checklists have become increasingly prevalent for paper submissions to conferences and journals in machine learning research. These checklists typically focus on the rigor of evaluations. They communicate to authors what the venue expects and aid reviewers in assessing the rigor of the research. The recommender-system community has made its first attempts to adopt such lists, but not as widely and comprehensively as the machine learning community. Therefore, we introduce Checky, a paper-submission checklist generator, archive, and recommender system. Checky is web-based, open source, and features an archive of checklists and a checklist generator with a recommender system. We hope that Checky (a) stimulates a discussion within the recommender systems community about whether and how submission checklists should be implemented and (b) facilitates the creation and management of checklists."
 
@@ -56,15 +56,7 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-links:
-- icon: 'open-access'
-  icon_pack: ai
-  name: Springer
-  url: https://link.springer.com/chapter/10.1007/978-3-031-88720-8_6
-- icon: doi
-  name: DOI
-  icon_pack: ai
-  url: https://doi.org/10.1007/978-3-031-88720-8_6
+links: []
 
 
 # Publication image

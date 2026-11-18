@@ -56,7 +56,7 @@ links:
 - icon: 'arxiv'
   icon_pack: ai
   name: preprint
-  url: https://arxiv.org/abs/2509.09414
+  url: https://arxiv.org/abs/2508.07980
 
 
 # Publication image

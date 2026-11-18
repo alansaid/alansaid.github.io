@@ -1,36 +1,23 @@
 ---
-summary: "Summary reviewing activities."
-widget: blank
-
-# This file represents a page section.
+title: "Peer review"
 headless: true
-
-# Order that this section appears on the page.
-weight: 50
-
-# Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Reviewing'
-subtitle: 'Conferences'
-
-design:
-  # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '2'
-  view: 3
-
-  # For Showcase view, flip alternate rows?
-  flip_alt_rows: false
+weight: 40
 ---
-# Conferences
-## As PC
+
+My peer-review work includes programme committee service for RecSys, UMAP and IUI and reviewing for CHI and CSCW.
+
+{{< archive title="Selected reviewing history" >}}
+
+### Programme committees
 - CSCW 2018
 - ACM TVX 2015--2017, Associate Chair
-- WWW/The Web Conference 2016--
+- WWW/The Web Conference
 - IUI 2015--2018
 - CHIIR 2016--2020
 - SAC 2013, 2014, 2017, 2018
-- RecSys 2012-2017, SPC 2018--
+- RecSys (PC and senior PC)
 - IEEE CBI 2018
-- UMAP 2014--
+- UMAP
 - ECIR 2014--2018
 - ECMLPKDD 2013--2017
 - HyperText 2013--2017, SPC 2018
@@ -38,23 +25,23 @@ design:
 - CIKM 2016-2017
 - ISWC 2016
 - BCS HCI 2012--2016
-- WSDM 
-- IJCAI  
+- WSDM
+- IJCAI
 
 
-## As Reviewer
-- CHI 
-- CSCW  
-- Multimedia  
-- ACM C&C  
-- ISMIR  
-- SUI  
-- MobileHCI  
-- EICS  
-- ECIS  
-- RecSys  
+### Conference reviewing
+- CHI
+- CSCW
+- Multimedia
+- ACM C&C
+- ISMIR
+- SUI
+- MobileHCI
+- EICS
+- ECIS
+- RecSys
 
-# Workshop PC
+### Workshop programme committees
 - Rebooting the Conversational Recommender Systems – RecSys 2017
 - Intelligent Recommender Systems by Knowledge Transfer & Learning – RecSys 2017
 - Towards comparative evaluation in user modeling, adaptation and personalization - UMAP 2016, 2017
@@ -70,10 +57,12 @@ design:
 - Recommender Systems Evaluation: Dimensions and Design - RecSys 2014
 - Linking User Data - UMAP 2014
 - User Interfaces for Crowdsourcing and Human Computation - AVI 2014
-- eyond Single-shot Text Queries: Bridging the Gap(s) Between Research Communities - iConference 2014
+- Beyond Single-shot Text Queries: Bridging the Gap(s) Between Research Communities - iConference 2014
 - LifeLong User Modelling - UMAP 2013
 - Web Personalization, Recommender Systems and Social Media - WI–IAT 2013, 2012
 - Semantic Personalized Information Management - ICWE 2012, ISWC 2011
 - Music Recommendation and Discovery - RecSys 2011
 - Context-Aware Recommender Systems - Recsys 2011, 2010
 - Interacting with Sound - Exploring Context-aware, Local and Social Audio Applications - MobileHCI 2011
+
+{{< /archive >}}

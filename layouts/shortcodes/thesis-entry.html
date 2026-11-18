@@ -1,0 +1,5 @@
+<article class="supervision-entry">
+  <h4>{{ .Get "students" }}{{ with .Get "title" }} &mdash; {{ . }}{{ end }}</h4>
+  <p class="supervision-meta">MSc thesis{{ with .Get "programme" }} &middot; {{ . }}{{ end }}{{ with .Get "institution" }} &middot; {{ . }}{{ end }}{{ with .Get "year" }} &middot; {{ . }}{{ end }}</p>
+  <div class="supervision-detail">{{ .Inner | markdownify }}</div>
+</article>

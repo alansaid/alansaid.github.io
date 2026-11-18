@@ -15,9 +15,6 @@
 
   <div class="article-container">
 
-  {{ partial "paper_title.html" . }}
-
-
     {{ if .Params.abstract }}
     <h3>{{ i18n "abstract" }}</h3>
     <p class="pub-abstract">{{ .Params.abstract | markdownify }}</p>
@@ -31,7 +28,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">{{ i18n "publication_type" }}</div>
           <div class="col-12 col-md-9">
-            <a href="{{ (site.GetPage "section" "publication").RelPermalink }}#{{ $pub_type_csl | anchorize }}">
+            <a href="{{ (site.GetPage (printf "/publication_types/%s" $pub_type_csl)).RelPermalink }}">
               {{ $pub_type_display }}
             </a>
           </div>
@@ -56,6 +53,7 @@
     <div class="d-md-none space-below"></div>
     {{ end }}
 
+    {{ with .Params.rate }}<p class="publication-acceptance">Acceptance rate: {{ . }}</p>{{ end }}
     <div class="space-below"></div>
 
     <div class="article-style">{{ .Content }}</div>

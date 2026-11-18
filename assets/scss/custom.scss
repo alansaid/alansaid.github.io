@@ -155,7 +155,8 @@
 }
 
 /* Research page: a reading column with quiet, grouped publication panels. */
-#research-page {
+#research-page,
+#people-page {
   .research-container {
     max-width: 920px;
     margin: 0 auto;
@@ -273,61 +274,230 @@
   }
 }
 
-/* Container for each press entry */
-.press-item {
-  position: relative;
-  padding: 0.35rem 0;
+/* People: compact supervision records and collaboration descriptions. */
+#people-page {
+  .people-content > h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 1.5rem 0 0.65rem;
+  }
+
+  .supervision-entry {
+    padding: 0.75rem 0;
+
+    + .supervision-entry {
+      border-top: 1px solid rgba(127, 127, 127, 0.2);
+    }
+
+    h4 {
+      margin: 0 0 0.2rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .supervision-meta {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    opacity: 0.82;
+  }
+
+  .supervision-detail {
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    p {
+      margin: 0.3rem 0 0;
+    }
+  }
+
+  .people-work-links {
+    font-size: 0.85rem;
+    margin-top: -0.3rem;
+  }
 }
 
-/* Make the text block behave nicely with the overlay */
-.press-text {
-  margin: 0;
-  line-height: 1.5;
+/* Reading pages and compact archives share the research page's quiet styling. */
+.editorial-page {
+  .editorial-container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  header h1 { margin: 0 0 1.5rem; }
+
+  .editorial-content {
+    line-height: 1.65;
+
+    section > h2 {
+      margin: 2.25rem 0 1rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(127, 127, 127, 0.22);
+      scroll-margin-top: 90px;
+    }
+
+    h3 { font-size: 1.05rem; margin: 1.4rem 0 0.7rem; }
+    li { margin-bottom: 0.6rem; }
+  }
+
+  .content-archive {
+    margin: 1.25rem 0;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    border-radius: 6px;
+    font-size: 0.9rem;
+
+    summary {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      background: rgba(127, 127, 127, 0.05);
+    }
+
+    .archive-content { padding: 0.5rem 1rem 0.75rem; }
+    .archive-content > :last-child { margin-bottom: 0; }
+  }
+
+  summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+  .media-story {
+    border-left: 3px solid rgba(127, 127, 127, 0.3);
+    padding-left: 1.25rem;
+
+    > h3 { margin-top: 0; font-size: 1.15rem; }
+  }
+
+  .media-entries {
+    list-style: none;
+    padding-left: 0;
+
+    .media-entry {
+      margin: 0;
+      padding: 0.8rem 0;
+      line-height: 1.45;
+
+      + .media-entry { border-top: 1px solid rgba(127, 127, 127, 0.18); }
+    }
+  }
+
+  .entry-meta, .story-paper {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0.3rem 0 0;
+  }
+
+  .entry-meta { opacity: 0.8; }
+
+  @media (max-width: 575.98px) {
+    .editorial-container { padding: 1.5rem 1rem 3rem; }
+    .media-story { padding-left: 0.85rem; }
+  }
 }
 
-/* Hover card with image */
-.press-hover-image {
-  position: absolute;
-
-  /* position it just under the text, left-aligned */
-  top: 100%;
-  left: 0;
-  margin-top: 0.75rem;
-
-  /* nudge slightly left of the text so overlay sits to the left */
-  transform: translate(-80px, 4px) scale(0.98);
-  opacity: 0;
-  pointer-events: none;
-
-  /* Card look that fits the dark theme */
-  background: rgba(15, 23, 42, 0.98);        /* near slate-900 */
-  border-radius: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
-  padding: 0.5rem;
-
-  max-width: unquote("min(320px, 45vw)");
-  z-index: 40;
-  transition:
-    opacity 0.18s ease-out,
-    transform 0.18s ease-out,
-    box-shadow 0.18s ease-out;
+#talks-page, #talk-page {
+  .speaking-links, .talk-materials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    font-size: 0.85rem;
+    a { padding: 0.3rem 0; }
+  }
+  .speaking-links { margin: 1.25rem 0; }
+  .selected-talks {
+    padding: 0.25rem 1.25rem;
+    border: 1px solid rgba(127, 127, 127, 0.24);
+    border-radius: 6px;
+    background: rgba(127, 127, 127, 0.05);
+  }
+  .talk-entry {
+    padding: 0.8rem 0;
+    margin: 0;
+    + .talk-entry { border-top: 1px solid rgba(127, 127, 127, 0.18); }
+    h3, h4 {
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      margin: 0 0 0.25rem;
+    }
+    .talk-description { font-size: 0.9rem; margin: 0.35rem 0; }
+  }
+  .talk-entries { list-style: none; padding: 0; margin: 0; }
+  .talk-year > h3 { margin: 1.75rem 0 0.25rem; }
+  .talk-overview {
+    margin: 1.5rem 0;
+    &.has-featured-image {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    .talk-details { margin-top: 0; }
+  }
+  .talk-featured-image {
+    margin: 0;
+    img { display: block; width: auto; max-width: 100%; height: auto; max-height: 260px; border-radius: 4px; }
+    figcaption { margin-top: 0.5rem; font-size: 0.75rem; line-height: 1.5; opacity: 0.8; }
+  }
+  @media (max-width: 767.98px) {
+    .talk-overview.has-featured-image { grid-template-columns: 1fr; gap: 1rem; }
+    .talk-featured-image { max-width: 300px; }
+  }
+  .talk-details {
+    margin: 1.5rem 0 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 0.75rem; margin-bottom: 0.5rem; }
+    dt { font-weight: 500; }
+    dd { margin: 0; }
+  }
+  @media (max-width: 575.98px) {
+    .speaking-links { flex-direction: column; gap: 0; }
+    .selected-talks { padding: 0.25rem 1rem; }
+  }
 }
 
-/* Show on hover */
-.press-item:hover .press-hover-image {
-  opacity: 1;
-  transform: translate(-80px, 0) scale(1);
-  pointer-events: auto;
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.7);
+#bio-page {
+  .bio-purpose { font-size: 0.9rem; margin-bottom: 2rem; }
+  .bio-materials {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 200px;
+    gap: 2rem;
+    align-items: start;
+  }
+  h2 { font-size: 1.25rem; margin: 0 0 1rem; }
+  .article-style { line-height: 1.65; }
+  .bio-photo { margin: 0; }
+  .bio-photo img { width: 100%; height: auto; border-radius: 4px; }
+  figcaption { font-size: 0.8rem; line-height: 1.6; margin-top: 0.65rem; }
+  figcaption span { opacity: 0.8; }
+  @media (max-width: 767.98px) {
+    .bio-materials { grid-template-columns: 1fr; gap: 1.25rem; }
+    .bio-photo { max-width: 200px; }
+  }
 }
 
-/* Show on hover */
-/* (Duplicate hover rule removed) */
+#updates {
+  .section-heading h2 { font-size: 1.5rem; margin-top: 0.2rem; }
+  .updates-list { list-style: none; margin: 0; padding: 0; }
 
-/* Don’t show the overlay on small screens – it gets awkward */
-@media (max-width: 768px) {
-  .press-hover-image {
-    display: none;
+  li {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: 0.5rem 1rem;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    + li { border-top: 1px solid rgba(127, 127, 127, 0.2); }
+  }
+
+  time { font-size: 0.8rem; opacity: 0.8; padding-top: 0.1rem; }
+  .update-kind { font-size: 0.8rem; margin-right: 0.35rem; }
+
+  @media (max-width: 575.98px) {
+    li { grid-template-columns: 1fr; gap: 0.2rem; }
+    .section-heading h2 { margin-bottom: 0.75rem; }
   }
 }

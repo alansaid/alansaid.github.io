@@ -82,7 +82,7 @@ image:
 
 url_code: ''
 url_pdf: ''
-url_slides: ''
+url_slides: '2024-10-08-rsss-history.pdf'
 url_video: ''
 
 

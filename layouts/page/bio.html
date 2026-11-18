@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article id="bio-page" class="article editorial-page">
+  <div class="editorial-container">
+    <header><h1>{{ .Title }}</h1></header>
+    <p class="bio-purpose">For event programmes, speaker introductions and media.</p>
+    <div class="bio-materials">
+      <section class="article-style" aria-labelledby="biography">
+        <h2 id="biography">Biography</h2>
+        {{ .Content }}
+      </section>
+      {{ with .Resources.GetMatch "featured.jpg" }}
+      {{ $preview := .Resize "440x webp" }}
+      <figure class="bio-photo">
+        <img src="{{ $preview.RelPermalink }}" width="{{ $preview.Width }}" height="{{ $preview.Height }}" alt="Portrait of Alan Said">
+        <figcaption><a href="{{ .RelPermalink }}" download="alan-said-portrait.jpg">Download portrait (JPG)</a><br><span>{{ .Width }} × {{ .Height }} pixels</span></figcaption>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
