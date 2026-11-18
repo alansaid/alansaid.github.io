@@ -3,7 +3,7 @@
 {{ $research := slice }}{{ $opinion := slice }}{{ $commentary := slice }}{{ $publishing := slice }}
 {{ range $i, $r := $rows }}
   {{ if gt $i 0 }}
-    {{ $entry := dict "date" (index $r 0) "outlet" (index $r 1) "title" (index $r 2) "language" (index $r 3) "link" (index $r 4) "icon" (index $r 5) "comment" (index $r 6) "selected" (index $r 13) }}
+    {{ $entry := dict "date" (index $r 0) "outlet" (index $r 1) "title" (index $r 2) "language" (index $r 3) "link" (index $r 4) "icon" (index $r 5) "comment" (index $r 6) "selected" (index $r 13) "link_status" (index $r 14) "syndication_group" (index $r 15) }}
     {{ if eq (index $r 12) "research" }}{{ $research = $research | append $entry }}
     {{ else if eq (index $r 12) "opinion" }}{{ $opinion = $opinion | append $entry }}
     {{ else if eq (index $r 12) "publishing" }}{{ $publishing = $publishing | append $entry }}
@@ -39,9 +39,24 @@
           <p>Our study of music listening across ages received coverage in Sweden and internationally.</p>
           {{ with site.GetPage "/publications/2025-golubovikj-soundtracks" }}<p class="story-paper"><a href="{{ .RelPermalink }}">Read the study: <em>{{ .Title }}</em> →</a></p>{{ end }}
           <ul class="media-entries">{{ range where $research "selected" "true" }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+          {{ $wire := where $research "syndication_group" "music-preferences-2025" }}
+          {{ with $wire }}
+          <div id="music-wire-coverage" class="wire-coverage">
+            <h4>German-language wire coverage</h4>
+            <p><em>Im Alter hat man weniger Lieblingslieder</em></p>
+            <p class="entry-meta">dpa and Keystone-SDA · September 2025</p>
+            <details class="content-archive">
+              <summary>View publishing outlets ({{ len . }})</summary>
+              <ul class="wire-outlets archive-content">
+                {{ range sort . "outlet" }}<li><a href="{{ .link }}">{{ .outlet }}</a></li>{{ end }}
+              </ul>
+            </details>
+          </div>
+          {{ end }}
+          {{ $other_coverage := where (where $research "selected" "ne" "true") "syndication_group" "ne" "music-preferences-2025" }}
           <details class="content-archive">
-            <summary>More coverage ({{ len (where $research "selected" "ne" "true") }} entries)</summary>
-            <ul class="media-entries archive-content">{{ range where $research "selected" "ne" "true" }}{{ partial "media-entry.html" . }}{{ end }}</ul>
+            <summary>More coverage ({{ len $other_coverage }} entries)</summary>
+            <ul class="media-entries archive-content">{{ range $other_coverage }}{{ partial "media-entry.html" . }}{{ end }}</ul>
           </details>
         </div>
       </section>

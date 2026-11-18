@@ -389,9 +389,31 @@
 
   .entry-meta { opacity: 0.8; }
 
+  .wire-coverage {
+    scroll-margin-top: 90px;
+    border-top: 1px solid rgba(127, 127, 127, 0.18);
+    padding-top: 1rem;
+    margin-top: 1.25rem;
+
+    h4 { font-family: inherit; font-size: 1rem; font-weight: 500; margin: 0 0 0.35rem; }
+    > p { margin: 0.35rem 0; }
+  }
+
+  .wire-outlets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 1.5rem;
+    list-style: none;
+    margin: 0;
+
+    li { margin: 0; overflow-wrap: anywhere; }
+    a { display: inline-block; padding: 0.25rem 0; }
+  }
+
   @media (max-width: 575.98px) {
     .editorial-container { padding: 1.5rem 1rem 3rem; }
     .media-story { padding-left: 0.85rem; }
+    .wire-outlets { grid-template-columns: 1fr; }
   }
 }
 
